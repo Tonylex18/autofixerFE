@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&family=Noto+Sans+Osmanya&display=swap');
+
+.Active::after {
+    max-width: 30%;
+    height: 2px;
+    display: block;
+    content: "";
+    background: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+    opacity: 1;
+    margin-bottom: -6px;
+    margin-top: 1px;
+    margin-left: 30%;
+}
+
+.color-red {
+    background-color: #FC0000;
+}
+
+.color-red-text {
+    border-color: #FC0000;
+}
+
+.bg-gray-color {
+    background-color: #F6F6F6;
+}
+
+.heroimagegradient::after {
+    content: "";
+    max-width: 100%;
+    height: 10px;
+    background-color: linear-gradient(-90deg, #FC0000 100%, #C1BA1E00 0%);
+    opacity: 1;
+    z-index: 10;
+    display: block;
+    margin-bottom: -6px;
+    margin-top: 1px;
+}
+
+.testimonial-section {
+    min-height: 50vh !important;
+}
+
+@media screen and (max-width: 970px) {
+    .testimonial-section {
+        min-height: 30vh !important;
+    }
+}
+
+.testimonial-section {
+    padding: 60px 9% 90px;
+}
+
+.owl-carousel .card .carousel-img {
+    width: 200px !important;
+    height: 200px;
+}
+
+.owl-carousel .card-body .carousel-quote-img {
+    width: 12px !important;
+    height: 12px;
+    background: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 20px !important;
+    height: 5px;
+    background: #f87a7a !important;
+}
+
+#menu {
+    transition: transform 0.3s ease-out !important;
+}
+
+
+
+#menu.active {
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transform: translateY(0) !important;
+}
+
+#menu.hide {
+    transform: translateY(-100%);
+}
+
+#menu.active ul {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#menu.active a {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    #menu {
+        display: none;
+    }
+
+    #menu.active {
+        padding-top: 50px;
+        /* Adjust this value based on your header height */
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #menu.active ul {
+        gap: 30px;
+    }
+}
+
+#cancel-btn {
+    color: white;
+    border: none;
+    cursor: pointer;
+    top: 5px;
+    right: 40px;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+#cancel-btn.active {
+    transform: rotate(180deg);
+    /* Rotate the cancel button when the menu is active */
+}
