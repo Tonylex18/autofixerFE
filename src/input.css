@@ -92,6 +92,10 @@
     transform: translateY(0) !important;
 }
 
+@media screen and (min-width:768px) {
+   
+}
+
 #menu.hide {
     transform: translateY(-100%);
 }
@@ -114,7 +118,6 @@
 
     #menu.active {
         padding-top: 50px;
-        /* Adjust this value based on your header height */
     }
 
     #menu-toggle {
@@ -136,7 +139,45 @@
     transition: transform 0.3s ease-in-out;
 }
 
-#cancel-btn.active {
-    transform: rotate(180deg);
-    /* Rotate the cancel button when the menu is active */
+/* Add background color to alternate columns */
+tbody td:is([data-type="number"]) {
+    background-color: rgb(255, 170, 170);
+    padding: 20px 20px;
+    width: fit;
+    margin-right: 20px;
+}
+
+
+.contactUs .form-wrapper .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#description .about-bg::after {
+    content: "";
+    background: rgb(207, 206, 206, .2);
+    z-index: -1;
+    height: 60vh;
+    width: 80%;
+    position: absolute; 
+    top: -95px;
+    right: 0;
+}
+
+.bg-layer::before {
+    content: "";
+    background: rgb(207, 206, 206, .2);
+    z-index: -1;
+    height: 40vh;
+    width: 50%;
+    position: absolute; 
+    top: -5px;
+    right: 20px;
+}
+
+@media screen and (max-768px) {
+    .bg-layer::before {
+        width: 100%;
+    }
 }
