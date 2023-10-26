@@ -67,7 +67,7 @@
                 >Booking</a
               >
             </li>
-            <li class="list-none Active">
+            <li class="list-none">
               <a
                 href="faq.html"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
@@ -112,102 +112,89 @@
       </nav>
     </header>
 
-    <!-- Content heading -->
-    <section id="contactUs" class="mt-10 md:pt-20 pt-16 mb-10 w-full">
+    <section
+      class="md:max-w-[90%] w-[95%] mx-auto md:p-20 items-center flex pt-14 my-14"
+    >
       <div
-        class="bg-red-600 max-w-[1140px] mx-auto flex items-center justify-center md:py-10 py-5"
+        class="flex bg-gray-200  md:justify-between justify-center items-center w-full"
       >
-        <h1 class="text-white md:text-5xl text-2xl font-medium">
-          Frequently asked questions
-        </h1>
-      </div>
-    </section>
+        <div class="img-box relative justify-center items-end w-[35%] h-full md:flex hidden">
+          <img class="w-full h-full resize-none object-cover" src="/public/assets/image11.png" />
+          <a href="login.html" class="absolute text-white bottom-5 underline">Already have an account?</a>
+        </div>
+ 
+        <div
+          class="form w-full py-10 m-5 md:m-0 md:px-14 md:w-[65%]"
+        >
+          <h1 class="text-3xl text-center font-bold my-5">Sign up</h1>
+          <form
+            action=""
+            method="post"
+            class="flex flex-col w-full h-fit space-y-5 py-0 relative"
+          >
+            <div>
+              <label for="name" class="text-base font-semibold"
+                >Full Name:</label
+              >
+              <input
+                type="text"
+                name="full-name"
+                id="name"
+                placeholder="It's urgent!!!"
+                class="outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
+              />
+            </div>
 
-    <!-- main heading -->
-    <section class="mt-10 md:pt-16 pt-16 mb-10 sm:w-[85%] w-[90%] mx-auto">
-      <div
-        className="max-w-[1140px] lg:flex items-center mx-auto color-red p-10"
-      >
-        <div class="flex justify-between items-center max-w-[1140px] mx-auto">
-          <div class="border-0 outline-none">
-            <i class="fa fa-location-dot text-red-600"></i>
-            <select
-              className="gap-5 text-gray-400 outline-none border-0 cursor-pointer"
+            <div>
+              <label for="email" class="text-base font-semibold"
+                >Email Address:</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="It's urgent!!!"
+                class="outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
+              />
+            </div>
+
+            <div>
+              <label for="password" class="text-base font-semibold"
+                >Password:</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="It's urgent!!!"
+                class="outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
+              />
+            </div>
+
+            <div>
+              <label for="password" class="text-base font-semibold"
+                >Confirm Password:</label
+              >
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                placeholder="It's urgent!!!"
+                class="mb-5 outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
+              />
+            </div>
+            <button
+              class="w-fit py-2 px-10 font-normal text-white self-end bg-red-500"
             >
-              <option value="minna" class="outline-none">Minna</option>
-              <option value="abuja" class="outline-none">Abuja</option>
-              <option value="lagos" class="outline-none">Lagos</option>
-            </select>
-          </div>
-
-          <div>
-            <button class="color-red px-8 py-3 text-white font-bold">
-              Contact us
+              Submit
             </button>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="bg-gray-100 max-w-[1140px] w-full mx-auto py-20 my-20 flex flex-col items-center justify-center"
-      >
-        <div class="heading">
-          <h1 class="font-bold text-3xl">Need help?</h1>
-        </div>
-
-        <div class="text mt-8 w-[80%] mx-auto flex flex-col gap-10">
-          <div>
-            <div class="text-heading text-xl font-semibold">
-              Do you charge for travel time to go and get the parts?
-            </div>
-            <p class="text-base font-semibold text-gray-400">
-              No. We only charge for time actually working on the vehicle.
-            </p>
-          </div>
-          <div>
-            <div class="text-heading text-xl font-semibold">
-              Will I know how much the car service or car repair will end up or
-              will I get a big surprise?
-            </div>
-            <p class="text-base font-semibold text-gray-400">
-              Before AutoFixer commences any work, the mechanic will show you an
-              itemised quote of work required and associated costs - you are
-              always in control of the cost and will not get a nasty surprise.
-            </p>
-          </div>
-          <div>
-            <div class="text-heading text-xl font-semibold">
-              Do I have to pay on the day of the job and how can I pay?
-            </div>
-            <p class="text-base font-semibold text-gray-400">
-              Yes. Payment needs to be made at the completion of the job. We
-              accept EFTPOS, all major Credit Cards incl American Express and
-              Diners, Cash, Cheque, Fleetcard, MotorPass and MotorCharge.
-            </p>
-          </div>
-          <div>
-            <div class="text-heading text-xl font-semibold">
-              Do you do repairs as well as services?
-            </div>
-            <p class="text-base font-semibold text-gray-400">
-              Of course, we have fully equipped mobile workshops and only employ
-              fully qualified and highly trained technicians. Click here Car
-              Repairs to find out more. Over 95% of all our work is performed on
-              site at your convenience.
-            </p>
-          </div>
-          <div>
-            <div class="text-heading text-xl font-semibold">
-              Are your technicians qualified?
-            </div>
-            <p class="text-base font-semibold text-gray-400">
-              Yes we only employ fully qualified technicians that have been in
-              the trade for 4 years or more. AutoFixer also continues their
-              training with internal and external training courses. We do train
-              some apprentices to help the trade but it's the mechanics in
-              control of working on your car.
-            </p>
-          </div>
+            <a
+              href="login.html"
+              class="block text-primary-color text-center -bottom-[80px] sm:left-[30%] left-[20%] absolute underline md:hidden"
+            >
+              Already have an account?</a
+            >
+          </form>
         </div>
       </div>
     </section>

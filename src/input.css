@@ -175,9 +175,38 @@ tbody td:is([data-type="number"]) {
     top: -5px;
     right: 20px;
 }
+.fix::before {
+    content: "";
+    background: rgb(207, 206, 206, .2);
+    z-index: -1;
+    height: 40vh;
+    width: 50%;
+    position: absolute; 
+    top: -50px;
+    right: 0;
+}
 
 @media screen and (max-768px) {
     .bg-layer::before {
         width: 100%;
     }
+}
+
+.current {
+    border-bottom: 3px solid #FC0000;
+    font-weight: bold;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .fade-in.active {
+    opacity: 1;
+  }
+
+.active-btn {
+    font-weight: bold;
+    color: white;
 }

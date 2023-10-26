@@ -48,7 +48,7 @@
             </li>
             <li class="list-none">
               <a
-                href="aboutus.html"
+                href="services.html"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
                 >Services</a
               >
@@ -57,7 +57,7 @@
               <a
                 href="#"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
-                >Videos</a
+                >About us</a
               >
             </li>
             <li class="list-none">
@@ -76,7 +76,7 @@
             </li>
             <li class="list-none">
               <a
-                href="#"
+                href="fix.html"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
                 >.Fix</a
               >
@@ -92,17 +92,19 @@
           <button id="cancel-btn" class="text-white text-5xl block lg:hidden">
             x
           </button>
+          <button
+            onclick="location.href='login.html';"
+            id=""
+            class="py-3 px-8 bg-red-500 text-white font-medium hover:bg-red-400 duration-200 z-10 block lg:hidden top-5 left-5 absolute"
+          >
+            Login
+          </button>
         </div>
 
         <div class="hidden lg:flex">
           <button
+            onclick="location.href='login.html';"
             class="py-3 px-8 bg-red-500 text-white font-medium hover:bg-red-400 duration-200"
-          >
-            Login
-          </button>
-          <button
-            id=""
-            class="py-3 px-8 bg-red-500 text-white font-medium hover:bg-red-400 duration-200 block lg:hidden"
           >
             Login
           </button>
@@ -119,15 +121,14 @@
         <div
           class="heroText flex flex-col space-y-5 flex-1 w-full lg:col-end-2 lg:col-span-1"
         >
-          <h1 class="font-bold md:text-5xl text-2xl">
-            Quality in car maintenance.
-          </h1>
-          <p class="text-gray-400 font-medium">
-            So many vehicles develop problems due to Lack of Maintenance or the
-            Wrong Maintenance Struture, We are here to solve that problem. Let's
-            partner with you and give your vehicle the best hands in the
-            industry.
-          </p>
+          <h1
+            id="hero-title"
+            class="font-bold md:text-5xl text-2xl fade-in"
+          ></h1>
+          <p
+            id="hero-description"
+            class="text-gray-400 font-medium fade-in"
+          ></p>
           <div class="flex space-x-5">
             <button
               class="color-red text-white font-medium md:text-base text-sm md:px-4 px-2 py-2"
@@ -141,17 +142,41 @@
             </button>
           </div>
         </div>
-        <div class="heroImage h-fit lg:mt-0 mt-10 lg:col-end-4 lg:col-span-1">
-          <img
-            src="/public/assets/image1.png"
-            class="h-[80vh] w-full object-cover"
-            alt=""
-          />
+        <div
+          class="heroImage h-fit lg:mt-0 mt-10 lg:col-end-4 lg:col-span-1 relative"
+        >
+          <img id="hero-image" class="h-[80vh] w-full object-cover" alt="" />
+          <div
+            class="image-cover w-full h-16 bg-gradient-to-r from-red-500 to-red-300 opacity-90 absolute top-0"
+          ></div>
         </div>
         <div
-          class="bg-black h-full flex items-center lg:col-end-5 lg:col-span-1 text-white px-10"
+          class="bg-black h-full flex flex-col justify-center gap-8 items-center lg:col-end-5 lg:col-span-1 text-white px-10"
         >
-          <h3>Buttons</h3>
+          <div
+            id="diagnosis"
+            class="flex gap-4 items-center cursor-pointer text-gray-500 text-xl hover:text-white duration-200 active-btn"
+            onclick="changeContent(0)"
+          >
+            <span>Diagnosis</span>
+            <i class="fas fa-car"></i>
+          </div>
+          <div
+            id="repair"
+            class="flex gap-4 items-center cursor-pointer text-gray-500 text-xl hover:text-white duration-200"
+            onclick="changeContent(1)"
+          >
+            <span>Repair</span>
+            <i class="fas fa-gear"></i>
+          </div>
+          <div
+            id="maintenance"
+            class="flex gap-4 items-center cursor-pointer text-gray-500 text-xl hover:text-white duration-200"
+            onclick="changeContent(2)"
+          >
+            <span>Maintenance</span>
+            <i class="fas fa-screwdriver-wrench"></i>
+          </div>
         </div>
       </div>
     </section>

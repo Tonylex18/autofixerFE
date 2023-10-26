@@ -48,7 +48,7 @@
             </li>
             <li class="list-none">
               <a
-                href="aboutus.html"
+                href="services.html"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
                 >Services</a
               >
@@ -57,7 +57,7 @@
               <a
                 href="#"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
-                >Videos</a
+                >About us</a
               >
             </li>
             <li class="list-none Active">
@@ -76,7 +76,7 @@
             </li>
             <li class="list-none">
               <a
-                href="#"
+                href="fix.html"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
                 >.Fix</a
               >
@@ -92,10 +92,18 @@
           <button id="cancel-btn" class="text-white text-5xl block lg:hidden">
             x
           </button>
+          <button
+            onclick="location.href='login.html';"
+            id=""
+            class="py-3 px-8 bg-red-500 text-white font-medium hover:bg-red-400 duration-200 z-10 block lg:hidden top-5 left-5 absolute"
+          >
+            Login
+          </button>
         </div>
 
         <div class="hidden lg:flex">
           <button
+          onclick="location.href='login.html';"
             class="py-3 px-8 bg-red-500 text-white font-medium hover:bg-red-400 duration-200"
           >
             Login
@@ -114,142 +122,259 @@
     </section>
 
     <!-- content description -->
-    <section id="description" class="max-w-[80%] md:mx-auto mx-5 mb-28 mt-20">
-        <div
-          class="flex justify-between items-start md:flex-row flex-col gap-10"
-        >
+    <section
+      id="description"
+      class="md:max-w-[85%] w-[95%] md:mx-auto mx-5 my-28"
+    >
+      <div class="flex justify-between items-start md:flex-row flex-col gap-10">
         <div class="option md:flex-1">
-            <div class="text flex flex-col flex-1">
-              <h1 class="font-bold text-3xl mb-6">Car diagnosis</h1>
-              <div class="flex flex-col items-start gap-5">
+          <div class="text flex flex-col flex-1">
+            <h1 class="font-bold text-3xl mb-6">Car diagnosis</h1>
+            <div class="flex flex-col items-start gap-5">
               <p class="text-gray-500 text-base font-medium">
-                Vehicle maintenance is more than just oil changes and wheel alignments. AUTOFIXER offers an extensive catalog of Manufacturer’s recommended Checks and Services for your vehicle, which keeps it running at its optimal level at all times. To get more out of this service, you can request for a quote or continue with the button below.
+                Vehicle maintenance is more than just oil changes and wheel
+                alignments. AUTOFIXER offers an extensive catalog of
+                Manufacturer’s recommended Checks and Services for your vehicle,
+                which keeps it running at its optimal level at all times. To get
+                more out of this service, you can request for a quote or
+                continue with the button below.
               </p>
               <div class="flex flex-col bg-red-200 px-8 py-3">
                 <div>
-                    <span class="font-bold text-gray-600">Price: </span>
-                    <span class="font-bold">N10,000</span>
+                  <span class="font-bold text-gray-600">Price: </span>
+                  <span class="font-bold">N10,000</span>
                 </div>
                 <div>
+                  <span class="font-bold text-gray-600">1-2, have more</span>
+                  <span class="font-bold underline">Discuss with sales</span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="color-red flex items-start w-fit px-8 text-white font-bold py-2 justify-start"
+            >
+              Contact us
+            </button>
+          </div>
+        </div>
+        <div class="text relative flex flex-col flex-1 gap-5 w-full items-end">
+          <div class="bg-layer"></div>
+          <img
+            src="/public/assets/image1.png"
+            alt="/"
+            class="md:w-[50%] w-full h-[40vh] object-cover items-end text-end"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Maintainance -->
+    <section id="maintainance" class="bg-gray-100 w-full my-28 py-20">
+      <div class="md:max-w-[85%] md:mx-auto mx-5">
+        <div
+          class="flex justify-between items-start md:flex-row flex-col gap-10"
+        >
+          <div class="option md:flex-1">
+            <div class="text flex flex-col flex-1">
+              <h1 class="font-bold text-3xl mb-6">Maintainance</h1>
+              <div class="flex flex-col items-start gap-5">
+                <p class="text-gray-500 text-base font-medium">
+                  You don’t have to be an expert to know that preventive
+                  maintenance is the best way to make sure your vehicle keeps
+                  running at its optimum level. Vehicles are machines and, over
+                  time, machines break down. When it comes to avoiding
+                  potentially expensive automotive repairs, there are steps you
+                  can take to protect your investment. Preventive Maintenance
+                  helps to prolong the life of your vehicle and to proactively
+                  resolve any potential issues. Our professional Auto
+                  Technicians are trained on preventive maintenance measures,
+                  services and everything in between.
+                </p>
+                <div class="flex flex-col bg-red-200 px-8 py-3">
+                  <div>
+                    <span class="font-bold text-gray-600">Price: </span>
+                    <span class="font-bold">N10,000</span>
+                  </div>
+                  <div>
                     <span class="font-bold text-gray-600">1-2, have more</span>
                     <span class="font-bold underline">Discuss with sales</span>
-                </div>
-              </div>
-              </div>
-              <button class="color-red flex items-start w-fit px-8 text-white font-bold py-2 justify-start">Contact us</button>
-            </div>
-          </div>
-          <div class="text relative flex flex-col flex-1 gap-5 w-full items-end">
-            <div class="bg-layer"></div>
-            <img src="/public/assets/image1.png" alt="/" class="md:w-[50%] w-full h-[40vh] object-cover items-end text-end" />
-          </div>
-          
-        </div>
-      </section>
-  
-
-
-        <!-- footer section -->
-
-        <section id="footer" class="footer bg-black">
-            <div class="max-w-[1140px] mx-5 lg:m-auto pt-20 text-white">
-              <div
-                class="flex flex-col lg:flex-row gap-5 justify-between items-start"
-              >
-                <div class="flex-auto w-full md:w-32 mb-20 lg:mb-0">
-                  <h1 class="text-5xl font-bold cursor-pointer">Logo</h1>
-                </div>
-                <div class="flex-auto w-full lg:w-7/12">
-                  <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
-                    <div>
-                      <h2 class="mb-3 text-2xl font-medium">Sitemap</h2>
-                      <div class="flex flex-col gap-2">
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >Home</span
-                        >
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >About us</span
-                        >
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >Testimonials</span
-                        >
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >Services</span
-                        >
-                      </div>
-                    </div>
-                    <div>
-                      <h2 class="mb-3 text-2xl font-medium">Others</h2>
-                      <div class="flex flex-col gap-2">
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >Get a quote</span
-                        >
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >Booking</span
-                        >
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >FAQ</span
-                        >
-      
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >Contact us</span
-                        >
-                      </div>
-                    </div>
-                    <div>
-                      <h2 class="mb-3 text-2xl font-medium">Services</h2>
-                      <div class="flex flex-col gap-2">
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >Auto Diagnosis</span
-                        >
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >Auto repair</span
-                        >
-      
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >Auto maintainance</span
-                        >
-                      </div>
-                    </div>
-                    <div>
-                      <h2 class="mb-3 text-2xl font-medium">Business hours</h2>
-                      <div class="flex flex-col gap-2">
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-lg font-medium"
-                          >Monday - Friday : 9-5AM</span
-                        >
-                        <span
-                          class="cursor-pointer opacity-60 w-fit text-base font-medium"
-                          >Vacations: All sundays, All holidays</span
-                        >
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
-              <span
-                class="flex justify-center items-center mx-auto md:text-xl text-base tracking-widest font-semibold mt-20 pb-10"
-                >© COPYRIGHT -2022-2023. Autofixer Nigeria. Limited</span
+              <button
+                class="flex items-start w-fit px-8 border border-red-400 text-black font-bold py-2 justify-start"
               >
+                Contact us
+              </button>
             </div>
-          </section>
-      
-          <!-- Jquery cdn -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-          <!-- owl carousel cdn links -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      
-          <script defer src="index.js"></script>
-        </body>
-      </html>
+          </div>
+          <div
+            class="text relative flex flex-col flex-1 gap-5 w-full items-end"
+          >
+            <img
+              src="/public/assets/image8.png"
+              alt="/"
+              class="md:w-[50%] w-full h-[40vh] object-cover items-end text-end"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Repair -->
+    <section id="repair" class="w-full my-28 py-20">
+      <div class="md:max-w-[85%] md:mx-auto mx-5">
+        <div
+          class="flex justify-between items-start md:flex-row flex-col gap-10"
+        >
+          <div
+            class="text relative flex flex-col flex-1 gap-5 w-full items-start"
+          >
+            <img
+              src="/public/assets/image3.png"
+              alt="/"
+              class="md:w-[50%] w-full h-[40vh] object-cover items-end text-end"
+            />
+          </div>
+          <div class="option md:flex-1">
+            <div class="text flex flex-col flex-1">
+              <h1 class="font-bold text-3xl mb-6">Repair</h1>
+              <div class="flex flex-col items-start gap-5">
+                <p class="text-gray-500 text-base font-medium">
+                  A well maintained vehicle is more fuel efficient, more
+                  reliable, and will last longer, making the most of your auto
+                  investment. AUTOFIXER is the perfect car care partner. Our
+                  expert auto repair technicians are trained to perform
+                  diagnostic and repair services on all makes and models, and we
+                  can take care of your factory recommended maintenance service
+                  as well. From routine maintenance like oil changes and tire
+                  rotations to wear-related repairs including brakes and brake
+                  repair, catalytic converters and exhausts, steering and
+                  suspension repairs, AUTOFIXER has you covered.
+                </p>
+                <div class="flex flex-col bg-red-200 px-8 py-3">
+                  <div>
+                    <span class="font-bold text-gray-600">Price: </span>
+                    <span class="font-bold">N10,000</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-600">1-2, have more</span>
+                    <span class="font-bold underline">Discuss with sales</span>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="flex items-start w-fit px-8 border border-red-400 text-black font-bold py-2 justify-start"
+              >
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <section id="footer" class="footer bg-black">
+      <div class="max-w-[1140px] mx-5 lg:m-auto pt-20 text-white">
+        <div
+          class="flex flex-col lg:flex-row gap-5 justify-between items-start"
+        >
+          <div class="flex-auto w-full md:w-32 mb-20 lg:mb-0">
+            <h1 class="text-5xl font-bold cursor-pointer">Logo</h1>
+          </div>
+          <div class="flex-auto w-full lg:w-7/12">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
+              <div>
+                <h2 class="mb-3 text-2xl font-medium">Sitemap</h2>
+                <div class="flex flex-col gap-2">
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >Home</span
+                  >
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >About us</span
+                  >
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >Testimonials</span
+                  >
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >Services</span
+                  >
+                </div>
+              </div>
+              <div>
+                <h2 class="mb-3 text-2xl font-medium">Others</h2>
+                <div class="flex flex-col gap-2">
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >Get a quote</span
+                  >
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >Booking</span
+                  >
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >FAQ</span
+                  >
+
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >Contact us</span
+                  >
+                </div>
+              </div>
+              <div>
+                <h2 class="mb-3 text-2xl font-medium">Services</h2>
+                <div class="flex flex-col gap-2">
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >Auto Diagnosis</span
+                  >
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >Auto repair</span
+                  >
+
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >Auto maintainance</span
+                  >
+                </div>
+              </div>
+              <div>
+                <h2 class="mb-3 text-2xl font-medium">Business hours</h2>
+                <div class="flex flex-col gap-2">
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-lg font-medium"
+                    >Monday - Friday : 9-5AM</span
+                  >
+                  <span
+                    class="cursor-pointer opacity-60 w-fit text-base font-medium"
+                    >Vacations: All sundays, All holidays</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span
+          class="flex justify-center items-center mx-auto md:text-xl text-base tracking-widest font-semibold mt-20 pb-10"
+          >© COPYRIGHT -2022-2023. Autofixer Nigeria. Limited</span
+        >
+      </div>
+    </section>
+
+    <!-- Jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- owl carousel cdn links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script defer src="index.js"></script>
+  </body>
+</html>
