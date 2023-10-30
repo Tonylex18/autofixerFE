@@ -1,4 +1,4 @@
-// script.js
+
 document.addEventListener('DOMContentLoaded', function () {
   const menuToggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
@@ -14,29 +14,23 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-   // Function to show a section and update the 'current' class
   function showSection(sectionId, button) {
-    // Hide all sections
     document.querySelectorAll('.help').forEach(section => {
       section.style.display = 'none';
     });
 
-    // Remove 'current' class from all buttons
     document.querySelectorAll('#buttons-selector button').forEach(btn => {
       btn.classList.remove('current');
     });
 
-    // Show the selected section
     const selectedSection = document.getElementById(sectionId);
     if (selectedSection) {
       selectedSection.style.display = 'block';
     }
 
-    // Add 'current' class to the clicked button
     button.classList.add('current');
   }
 
-  // Show the car-diagnosis section by default on page load
   document.addEventListener('DOMContentLoaded', function() {
     showSection('car-diagnosis', document.querySelector('.current'));
   });
@@ -71,31 +65,25 @@ document.addEventListener('DOMContentLoaded', function () {
     const descriptionElement = document.getElementById('hero-description');
     const imageElement = document.getElementById('hero-image');
 
-    // Remove active-btn class from all buttons
     document.querySelectorAll('.active-btn').forEach(btn => btn.classList.remove('active-btn'));
 
-    // Add active-btn class to the clicked button
     button.classList.add('active-btn');
 
-    // Add fade-out effect before changing content
     titleElement.classList.remove('active');
     descriptionElement.classList.remove('active');
     imageElement.classList.remove('active');
 
     setTimeout(() => {
-      // Change content
       titleElement.innerText = selected.title;
       descriptionElement.innerText = selected.description;
       imageElement.src = selected.image;
 
-      // Trigger a reflow to restart the transition
       void titleElement.offsetWidth;
 
-      // Add fade-in effect
       titleElement.classList.add('active');
       descriptionElement.classList.add('active');
       imageElement.classList.add('active');
-    }, 500); // Set timeout to match the transition duration
+    }, 500);
   }
 
   function autoplay() {
@@ -117,10 +105,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Show initial content on page load
   changeContent(currentIndex, document.getElementById(getButtonId(currentIndex)));
 
-  // Autoplay every 5000 milliseconds (5 seconds)
   setInterval(autoplay, 5000);
 
 

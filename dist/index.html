@@ -24,7 +24,9 @@
   <body>
     <header class="p-4 bg-white fixed top-0 w-full shadow z-20">
       <nav class="flex items-center justify-between max-w-[1240px] mx-auto">
-        <div class="font-bold text-xl">Logo</div>
+        <div class="font-bold text-xl">
+          <a href="index.html">Logo</a>
+        </div>
 
         <!-- Hamburger menu for smaller screens -->
         <div class="lg:hidden">
@@ -112,31 +114,30 @@
       </nav>
     </header>
 
-    <!-- Your content goes here -->
 
-    <section id="hero-section" class="container mx-auto py-3 mt-20">
+    <section id="hero-section" class="max-w-[1240px] mx-auto py-3 mt-20">
       <div
-        class="grid lg:grid-cols-3 md:grid-cols-1 justify-between items-center mx-5"
+        class="grid lg:grid-cols-3 md:grid-cols-1  items-center lg:mx-0 mx-5"
       >
         <div
-          class="heroText flex flex-col space-y-5 flex-1 w-full lg:col-end-2 lg:col-span-1"
+          class="heroText flex flex-col space-y-5 flex-1 lg:col-end-3 lg:col-span-2"
         >
           <h1
             id="hero-title"
-            class="font-bold md:text-5xl text-2xl fade-in"
+            class="font-bold lg:w-[60%] md:text-5xl capitalize text-2xl fade-in"
           ></h1>
           <p
             id="hero-description"
-            class="text-gray-400 font-medium fade-in"
+            class="text-gray-400 font-medium fade-in lg:w-[85%]"
           ></p>
           <div class="flex space-x-5">
             <button
-              class="color-red text-white font-medium md:text-base text-sm md:px-4 px-2 py-2"
+              class="color-red hover:bg-transparent hover:text-black border hover:border-red-500 duration-200 text-white font-medium md:text-base text-sm md:px-4 px-2 py-2"
             >
               Schedule a visit
             </button>
             <button
-              class="border color-red-text md:text-base text-sm md:px-5 px-2 py-2 font-medium"
+              class="border hover:bg-red-600 hover:text-white duration-200 color-red-text md:text-base text-sm md:px-5 px-2 py-2 font-medium"
             >
               Learn more
             </button>
@@ -151,11 +152,11 @@
           ></div>
         </div>
         <div
-          class="bg-black h-full flex flex-col justify-center gap-8 items-center lg:col-end-5 lg:col-span-1 text-white px-10"
+          class="bg-black h-full flex flex-col justify-center gap-8 items-end lg:col-end-7 lg:col-span-1 text-white px-10 py-10"
         >
           <div
             id="diagnosis"
-            class="flex gap-4 items-center cursor-pointer text-gray-500 text-xl hover:text-white duration-200 active-btn"
+            class="flex gap-4 items-end cursor-pointer text-gray-500 text-xl hover:text-white duration-200 active-btn"
             onclick="changeContent(0)"
           >
             <span>Diagnosis</span>
@@ -237,7 +238,7 @@
           </p>
           <div class="flex space-x-5">
             <button
-              class="text-white border border-white font-medium px-4 py-2"
+              class="text-white border hover:bg-white hover:text-black duration-200 border-white font-medium px-4 py-2"
             >
               Learn more
             </button>
