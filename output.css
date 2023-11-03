@@ -588,8 +588,8 @@ video {
   position: relative;
 }
 
-.-bottom-\[80px\] {
-  bottom: -80px;
+.-bottom-\[60px\] {
+  bottom: -60px;
 }
 
 .bottom-0 {
@@ -612,12 +612,12 @@ video {
   left: 4rem;
 }
 
-.left-5 {
-  left: 1.25rem;
+.left-2\/4 {
+  left: 50%;
 }
 
-.left-\[20\%\] {
-  left: 20%;
+.left-5 {
+  left: 1.25rem;
 }
 
 .right-0 {
@@ -756,6 +756,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -826,6 +830,10 @@ video {
 
 .h-\[50vh\] {
   height: 50vh;
+}
+
+.h-\[65vh\] {
+  height: 65vh;
 }
 
 .h-\[70vh\] {
@@ -1752,6 +1760,10 @@ tbody td:is([data-type="number"]) {
   color: white;
 }
 
+.displace {
+  transform: translate(-50%, -50%);
+}
+
 .hover\:border-red-500:hover {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
@@ -1806,10 +1818,6 @@ tbody td:is([data-type="number"]) {
 }
 
 @media (min-width: 640px) {
-  .sm\:left-\[30\%\] {
-    left: 30%;
-  }
-
   .sm\:w-\[85\%\] {
     width: 85%;
   }
@@ -1886,6 +1894,10 @@ tbody td:is([data-type="number"]) {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[90vh\] {
+    height: 90vh;
   }
 
   .md\:w-1\/2 {

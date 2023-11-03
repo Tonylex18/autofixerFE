@@ -215,3 +215,7 @@ tbody td:is([data-type="number"]) {
     font-weight: bold;
     color: white;
 }
+
+.displace {
+    transform: translate(-50%, -50%);
+}
