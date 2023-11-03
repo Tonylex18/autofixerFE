@@ -23,7 +23,7 @@
   </head>
   <body>
     <header class="p-4 bg-white fixed top-0 w-full shadow z-20">
-      <nav class="flex items-center justify-between max-w-[1240px] mx-auto">
+      <nav class="flex items-center justify-between max-w-[1140px] mx-auto">
         <div class="font-bold text-xl">
           <a href="index.html">Logo</a>
         </div>
@@ -57,7 +57,7 @@
             </li>
             <li class="list-none">
               <a
-                href="#"
+                href="aboutus.html"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
                 >About us</a
               >
@@ -115,7 +115,7 @@
     </header>
 
 
-    <section id="hero-section" class="max-w-[1240px] mx-auto py-3 mt-20">
+    <section id="hero-section" class="max-w-[1140px] mx-auto py-3 mt-20">
       <div
         class="grid lg:grid-cols-3 md:grid-cols-1  items-center lg:mx-0 mx-5"
       >
@@ -184,71 +184,55 @@
 
     <!-- Section services -->
     <section id="services" class="services w-full bg-red-400">
-      <div class="max-w-[1240px] lg:flex items-center mx-auto color-red p-10">
-        <div class="md:grid md:grid-cols-2 lg:flex-1 lg:w-4/5 w-full">
-          <div class="images w-full flex lg:col-start-1 lg:col-end-3">
+      <div class="max-w-[1140px] lg:flex flex-wrap items-center mx-auto color-red p-10">
+        <div class="md:grid md:grid-cols-2 gap-3 lg:flex-1 lg:w-4/5 w-full images-container">
+          <div class="images w-full flex">
             <span class="text-white text-3xl font-bold mr-1">01</span>
             <div class="w-full">
-              <img
-                src="/public/assets/image2.png"
-                class="object-cover w-full"
-                alt=""
-              />
+              <img src="/public/assets/image2.png" class="object-cover w-full" alt="" />
               <p class="text-center font-bold text-2xl py-2 bg-white">
                 Car Diagnosis
               </p>
             </div>
           </div>
-          <div class="images flex md:mt-0 mt-8 lg:col-end-7 lg:col-span-2">
+          <div class="images flex md:mt-0 mt-8">
             <span class="text-white text-3xl font-bold mr-1">02</span>
             <div class="w-full">
-              <img
-                src="/public/assets/image3.png"
-                class="w-full object-cover"
-                alt=""
-              />
+              <img src="/public/assets/image3.png" class="w-full object-cover" alt="" />
               <p class="text-center font-bold text-2xl py-2 bg-white">
                 Car Repair
               </p>
             </div>
           </div>
-          <div class="images flex lg:col-start-2 lg:col-span-4 mt-5">
+          <div class="images flex mt-10 md:mt-auto md:col-span-2 md:justify-center mx-auto">
             <span class="text-white text-3xl font-bold mr-1">03</span>
             <div class="w-full">
-              <img
-                src="/public/assets/image4.png"
-                class="object-cover w-full"
-                alt=""
-              />
-              <p class="text-center font-bold text-2xl py-2 bg-white">
+              <img src="/public/assets/image4.png" class="object-cover lg:mx-auto w-full" alt="" />
+              <p class="text-center mx-auto font-bold text-2xl py-2 bg-white">
                 Maintenance
               </p>
             </div>
           </div>
         </div>
-
-        <div
-          class="text flex flex-col flex-1 lg:w-1/5 lg:pl-14 gap-6 lg:mt-0 mt-5"
-        >
+    
+        <div class="text flex flex-col flex-1 lg:w-1/5 lg:pl-14 gap-6 lg:mt-0 mt-5">
           <h1 class="font-medium text-5xl text-white">Services</h1>
           <p class="text-gray-300 font-medium">
-            Our Fix service provides you with a one-stop professional service
-            for all of your auto needs. From electrical, to bodyworks and
-            mechanical faults, we have got you covered.
+            Our Fix service provides you with a one-stop professional service for all of your auto needs.
+            From electrical, to bodyworks and mechanical faults, we have got you covered.
           </p>
           <div class="flex space-x-5">
-            <button
-              class="text-white border hover:bg-white hover:text-black duration-200 border-white font-medium px-4 py-2"
-            >
+            <button class="text-white border hover:bg-white hover:text-black duration-200 border-white font-medium px-4 py-2">
               Learn more
             </button>
           </div>
         </div>
       </div>
     </section>
-
+    
+    
     <!-- Help section -->
-    <section id="helpSection" class="help bg-gray-color w-full py-10">
+    <section id="helpSection" class="bg-gray-color w-full py-10">
       <div
         class="content flex gap-4 flex-col items-center justify-center mx-auto md:w-3/4 w-[95%]"
       >
