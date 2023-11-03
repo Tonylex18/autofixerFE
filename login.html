@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autofixer | Landing page</title>
 
-    <link rel="stylesheet" href="../../dist/output.css" />
+    <link rel="stylesheet" href="dist/output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -114,93 +114,73 @@
       </nav>
     </header>
 
-    <section
-      class="md:max-w-[90%] w-[95%] mx-auto md:p-20 items-center flex pt-14 my-14"
-    >
+    <section class="md:max-w-[1140px] w-[96%] mx-auto  flex items-center justify-center md:py-28 py-28">
       <div
-        class="flex bg-gray-200  md:justify-between justify-center items-center w-full"
+        class="container flex md:justify-between justify-center items-center w-full  "
       >
-        <div class="img-box relative justify-center items-end w-[35%] h-full md:flex hidden">
-          <img class="w-full h-full resize-none object-cover" src="/public/assets/image11.png" />
-          <a href="login.html" class="absolute text-white bottom-5 underline">Already have an account?</a>
-        </div>
- 
         <div
-          class="form w-full py-10 m-5 md:m-0 md:px-14 md:w-[65%]"
+          class="img-box relative justify-center items-end w-[35%] h-full md:flex hidden"
         >
-          <h1 class="text-3xl text-center font-bold my-5">Sign up</h1>
+          <img
+            class="w-full h-[90vh] object-cover"
+            src="/public/assets/image11.png"
+          />
+          <a
+            href="createAccount.html"
+            class="absolute text-white bottom-5 underline"
+          >
+            Don't have an account?</a
+          >
+        </div>
+        <div
+          class="w-full h-[90vh] flex items-center justify-center flex-col bg-gray-200 py-10 px-5 m-5 md:m-0 md:px-14 md:w-[65%] relative"
+        >
+          <h1 class="text-3xl text-center font-bold my-5">Sign in</h1>
           <form
             action=""
             method="post"
-            class="flex flex-col w-full h-fit space-y-5 py-0 relative"
+            class="flex flex-col h-[90%] w-full relative space-y-2 py-0"
           >
-            <div>
-              <label for="name" class="text-base font-semibold"
-                >Full Name:</label
-              >
-              <input
-                type="text"
-                name="full-name"
-                id="name"
-                placeholder="It's urgent!!!"
-                class="outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
-              />
-            </div>
+            <label for="email" class="text-base font-semibold">Email Address:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="It's urgent!!!"
+              class="outline-none border-none w-full px-4 md:py-4 py-2"
+            />
 
-            <div>
-              <label for="email" class="text-base font-semibold"
-                >Email Address:</label
-              >
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="It's urgent!!!"
-                class="outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
-              />
-            </div>
+            <label for="password" class="text-base font-semibold">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="It's urgent!!!"
+              class="outline-none border-none w-full px-4 md:py-4 py-2"
+            />
 
-            <div>
-              <label for="password" class="text-base font-semibold"
-                >Password:</label
-              >
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="It's urgent!!!"
-                class="outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
-              />
-            </div>
+            <br />
 
-            <div>
-              <label for="password" class="text-base font-semibold"
-                >Confirm Password:</label
-              >
-              <input
-                type="password"
-                name="confirm-password"
-                id="confirm-password"
-                placeholder="It's urgent!!!"
-                class="mb-5 outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
-              />
-            </div>
+            <a href="forgotPassword.html" class="underline text-right font-normal"
+              >Forgot password?</a
+            >
+
             <button
-            onclick="location.href='login.html';"
-              class="w-fit py-2 px-10 font-normal text-white self-end bg-red-500"
+            onclick="location.href='index.html';"
+              class="w-fit py-2 px-10 bg-red-500 text-white absolute bottom-0 right-0"
             >
               Submit
             </button>
-            <a
-              href="login.html"
-              class="block text-primary-color text-center -bottom-[80px] sm:left-[30%] left-[20%] absolute underline md:hidden"
-            >
-              Already have an account?</a
-            >
           </form>
+          <a
+            href="createAccount.html"
+            class="absolute block text-primary-color text-ce  nter bottom-[-70px] underline md:hidden"
+          >
+            Don't have an account?</a
+          >
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
     <!-- footer section -->
 
@@ -303,6 +283,6 @@
     <!-- owl carousel cdn links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script defer src="../../dist/index.js"></script>
+    <script defer src="dist/index.js"></script>
   </body>
 </html>

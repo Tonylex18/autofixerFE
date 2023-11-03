@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autofixer | Landing page</title>
 
-    <link rel="stylesheet" href="../../dist/output.css" />
+    <link rel="stylesheet" href="dist/output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -76,7 +76,7 @@
                 >FAQ</a
               >
             </li>
-            <li class="list-none Active">
+            <li class="list-none">
               <a
                 href="fix.html"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
@@ -114,103 +114,90 @@
       </nav>
     </header>
 
-    <!-- Content heading -->
-    <section id="contactUs" class="mt-10 md:pt-20 pt-16 mb-10 w-full">
-      <div
-        class="bg-red-600 md:max-w-[1140px] w-[95%] mx-auto flex items-center justify-center md:py-10 py-5"
-      >
-        <h1 class="text-white md:text-5xl text-2xl font-medium">.Fix</h1>
-      </div>
-    </section>
-
     <section
-      id="description"
-      class="md:max-w-[83%] w-[95%] md:mx-auto mx-5 my-28"
+      class="md:max-w-[90%] w-[95%] mx-auto md:p-20 items-center flex pt-14 my-14"
     >
-      <div class="flex justify-between items-start md:flex-row flex-col gap-10">
-        <div class="option md:flex-1">
-          <div class="text flex flex-col flex-1">
-            <h1 class="font-bold text-3xl mb-6">Autofixer solutions</h1>
-            <div class="flex flex-col items-start gap-5">
-              <p class="text-gray-500 text-base font-medium">
-                Dotfix is an artificial intelligence chat box created by
-                Autofixer Solutions which will enable our customers obtain
-                expert advice answer technical questions and give customers
-                updates about the sate of automobiles. In addition, Dotfix or as
-                we like to call it “your virtual Mechanic” can help identify
-                faults in your cars give you first aid to stop the fault from
-                becoming dangerous to your automobile and book a fix for you at
-                Autofixer solutions where the problem can be completely solved.
-                Because its virtual, it can be accessed from the convenient of
-                your home, while driving and at your office. Dotfix is aimed to
-                give car owners first hand knowledge about the potential problem
-                and recommend a solution both long term and short term. Dotfix
-                can be accessed via various social media platform such as
-                Facebook, Instagram and WhatsApp.
-              </p>
-            </div>
-          </div>
+      <div
+        class="flex bg-gray-200  md:justify-between justify-center items-center w-full"
+      >
+        <div class="img-box relative justify-center items-end w-[35%] h-full md:flex hidden">
+          <img class="w-full h-full resize-none object-cover" src="/public/assets/image11.png" />
+          <a href="login.html" class="absolute text-white bottom-5 underline">Already have an account?</a>
         </div>
+ 
         <div
-          class="text relative flex flex-col flex-1 gap-5 w-full items-end md:mt-0 mt-10"
+          class="form w-full py-10 m-5 md:m-0 md:px-14 md:w-[65%]"
         >
-          <div class="fix"></div>
-          <div class="flex flex-col bg-white p-4 absolute bottom-0 md:left-16 left-0">
-            <h1 class="font-bold text-xl">Dotfix is available on:</h1>
-            <span class="text-red-400 ">Instagram - @dotfixautofixer</span>
-            <span class="text-red-400 ">Facebook – Dotfixng</span>
-            <span class="text-red-400 ">WhatsApp - 08066245523</span>
-          </div>
-          <img
-            src="/public/assets/image9.png"
-            alt="/"
-            class="md:w-[70%] w-full h-[70vh] object-cover items-end text-end"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Information section -->
-    <section id="information" class="information w-full bg-red-600">
-      <div class="max-w-[1240px] mx-auto color-red p-10 py-20 h-full">
-        <div
-          class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-[3px] mt-8"
-        >
-          <!-- Card one -->
-          <div class="bg-white flex items-center gap-3 p-5">
-            <i class="fa-regular fa-user text-xl cursor-pointer bg-red-500 p-5 text-white"></i>
+          <h1 class="text-3xl text-center font-bold my-5">Sign up</h1>
+          <form
+            action=""
+            method="post"
+            class="flex flex-col w-full h-fit space-y-5 py-0 relative"
+          >
             <div>
-              <span class="font-bold">Expert service</span>
-              <p class="text-sm">Lorem ipsum dolor sit.</p>
+              <label for="name" class="text-base font-semibold"
+                >Full Name:</label
+              >
+              <input
+                type="text"
+                name="full-name"
+                id="name"
+                placeholder="It's urgent!!!"
+                class="outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
+              />
             </div>
-          </div>
 
-          <!-- Card two -->
-          <div class="bg-white flex items-center p-5 gap-3">
-            <i class="fa-solid fa-book text-xl cursor-pointer bg-red-500 p-5 text-white"></i>
             <div>
-                <h2 class="font-bold">Book a fix</h2>
-                <p class="text-sm">Lorem ipsum dolor sit.</p>
+              <label for="email" class="text-base font-semibold"
+                >Email Address:</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="It's urgent!!!"
+                class="outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
+              />
             </div>
-          </div>
 
-          <!-- card three -->
-          <div class="bg-white flex items-center gap-3 p-5">
-            <i class="text-xl cursor-pointer bg-red-500 p-5 text-white">SOS</i>
             <div>
-                <h2 class="font-bold">SOS</h2>
-                <p class="text-sm">Lorem ipsum dolor sit.</p>
+              <label for="password" class="text-base font-semibold"
+                >Password:</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="It's urgent!!!"
+                class="outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
+              />
             </div>
-          </div>
 
-          <!-- card four -->
-          <div class="bg-white flex items-center p-5 gap-2">
-            <i class="fa-regular fa-circle-question text-xl cursor-pointer bg-red-500 p-5 text-white"></i>
             <div>
-                <h2 class="font-bold">Ask a question</h2>
-                <p class="text-sm">Lorem ipsum dolor sit.</p>
+              <label for="password" class="text-base font-semibold"
+                >Confirm Password:</label
+              >
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                placeholder="It's urgent!!!"
+                class="mb-5 outline-none border-none w-full px-4 md:py-4 py-2 mt-2"
+              />
             </div>
-          </div>
+            <button
+            onclick="location.href='login.html';"
+              class="w-fit py-2 px-10 font-normal text-white self-end bg-red-500"
+            >
+              Submit
+            </button>
+            <a
+              href="login.html"
+              class="block text-primary-color text-center -bottom-[80px] sm:left-[30%] left-[20%] absolute underline md:hidden"
+            >
+              Already have an account?</a
+            >
+          </form>
         </div>
       </div>
     </section>
@@ -316,6 +303,6 @@
     <!-- owl carousel cdn links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script defer src="../../dist/index.js"></script>
+    <script defer src="dist/index.js"></script>
   </body>
 </html>
