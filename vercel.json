@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
         {
-          "src": "dist/*.html",
+          "src": "/src/app/(.*)",
           "use": "@vercel/static-build"
         },
         {
@@ -16,12 +16,12 @@
         "dest": "/public/$1"
       },
       {
-        "src": "/dist/(.*)",
-        "dest": "/dist/$1"
+        "src": "/src/app/(.*)",
+        "dest": "/src/app/$1"
       },
       {
         "src": "/(.*)",
-        "dest": "/dist/$1"
+        "dest": "/src/app/$1"
       }
     ]
   }

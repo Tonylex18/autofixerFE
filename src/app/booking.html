@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autofixer | Landing page</title>
 
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="../../dist/output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -62,14 +62,14 @@
                 >About us</a
               >
             </li>
-            <li class="list-none">
+            <li class="list-none Active">
               <a
                 href="booking.html"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
                 >Booking</a
               >
             </li>
-            <li class="list-none Active">
+            <li class="list-none">
               <a
                 href="faq.html"
                 class="duration-200 no-underline px-4 py-2 font-medium w-fit"
@@ -117,98 +117,160 @@
     <!-- Content heading -->
     <section id="contactUs" class="mt-10 md:pt-20 pt-16 mb-10 w-full">
       <div
-        class="bg-red-600 max-w-[1140px] mx-auto flex items-center justify-center md:py-10 py-5"
+        class="bg-red-600 md:max-w-[1140px] w-[95%] mx-auto flex items-center justify-center md:py-10 py-5"
       >
-        <h1 class="text-white md:text-5xl text-2xl font-medium">
-          Frequently asked questions
-        </h1>
+        <h1 class="text-white md:text-5xl text-2xl font-medium">Book online</h1>
       </div>
     </section>
 
-    <!-- main heading -->
-    <section class="mt-10 md:pt-16 pt-16 mb-10 sm:w-[85%] w-[90%] mx-auto">
-      <div
-        className="max-w-[1140px] lg:flex items-center mx-auto color-red p-10"
-      >
-        <div class="flex justify-between items-center max-w-[1140px] mx-auto">
-          <div class="border-0 outline-none">
-            <i class="fa fa-location-dot text-red-600"></i>
-            <select
-              className="gap-5 text-gray-400 outline-none border-0 cursor-pointer"
+    <!-- content description -->
+    <section
+      id="description"
+      class="md:max-w-[83%] w-[95%] md:mx-auto mx-5 my-28"
+    >
+      <div class="flex justify-between items-start md:flex-row flex-col gap-10">
+        <div class="option md:flex-1">
+          <div class="text flex flex-col flex-1">
+            <h1 class="font-bold text-3xl mb-6">Car diagnosis</h1>
+            <div class="flex flex-col items-start gap-5">
+              <p class="text-gray-500 text-base font-medium">
+                Vehicle maintenance is more than just oil changes and wheel
+                alignments. AUTOFIXER offers an extensive catalog of
+                Manufacturer’s recommended Checks and Services for your vehicle,
+                which keeps it running at its optimal level at all times. To get
+                more out of this service, you can request for a quote or
+                continue with the button below.
+              </p>
+              <div class="flex flex-col bg-red-200 px-8 py-8">
+                <div>
+                  <span class="font-bold text-gray-600">Price: </span>
+                  <span class="font-bold">N10,000</span>
+                </div>
+                <div>
+                  <span class="font-bold text-gray-600">1-2, have more</span>
+                  <span class="font-bold underline">Discuss with sales</span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="color-red flex items-start w-fit px-8 text-white font-bold py-2 justify-start"
             >
-              <option value="minna" class="outline-none">Minna</option>
-              <option value="abuja" class="outline-none">Abuja</option>
-              <option value="lagos" class="outline-none">Lagos</option>
-            </select>
-          </div>
-
-          <div>
-            <button class="color-red px-8 py-3 text-white font-bold">
               Contact us
             </button>
           </div>
         </div>
-      </div>
-
-      <div
-        class="bg-gray-100 max-w-[1140px] w-full mx-auto py-20 my-20 flex flex-col items-center justify-center"
-      >
-        <div class="heading">
-          <h1 class="font-bold text-3xl">Need help?</h1>
+        <div class="text relative flex flex-col flex-1 gap-5 w-full items-end">
+          <div class="bg-layer"></div>
+          <img
+            src="/public/assets/image1.png"
+            alt="/"
+            class="md:w-[90%] w-full h-[50vh] object-cover items-end text-end"
+          />
         </div>
+      </div>
+    </section>
 
-        <div class="text mt-8 w-[80%] mx-auto flex flex-col gap-10">
-          <div>
-            <div class="text-heading text-xl font-semibold">
-              Do you charge for travel time to go and get the parts?
+    <!-- Maintainance -->
+    <section id="maintainance" class="bg-gray-100 w-full my-28 py-20">
+      <div class="md:max-w-[83%] md:mx-auto mx-5">
+        <div
+          class="flex justify-between items-start md:flex-row flex-col gap-10"
+        >
+          <div class="option md:flex-1">
+            <div class="text flex flex-col flex-1">
+              <h1 class="font-bold text-3xl mb-6">Maintainance</h1>
+              <div class="flex flex-col items-start gap-5">
+                <p class="text-gray-500 text-base font-medium">
+                  You don’t have to be an expert to know that preventive
+                  maintenance is the best way to make sure your vehicle keeps
+                  running at its optimum level. Vehicles are machines and, over
+                  time, machines break down. When it comes to avoiding
+                  potentially expensive automotive repairs, there are steps you
+                  can take to protect your investment. Preventive Maintenance
+                  helps to prolong the life of your vehicle and to proactively
+                  resolve any potential issues. Our professional Auto
+                  Technicians are trained on preventive maintenance measures,
+                  services and everything in between.
+                </p>
+                <div class="flex flex-col bg-red-200 px-8 py-8">
+                  <div>
+                    <span class="font-bold text-gray-600">Price: </span>
+                    <span class="font-bold">N10,000</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-600">1-2, have more</span>
+                    <span class="font-bold underline">Discuss with sales</span>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="flex items-start w-fit px-8 border border-red-400 text-black font-bold py-2 justify-start"
+              >
+                Contact us
+              </button>
             </div>
-            <p class="text-base font-semibold text-gray-400">
-              No. We only charge for time actually working on the vehicle.
-            </p>
           </div>
-          <div>
-            <div class="text-heading text-xl font-semibold">
-              Will I know how much the car service or car repair will end up or
-              will I get a big surprise?
-            </div>
-            <p class="text-base font-semibold text-gray-400">
-              Before AutoFixer commences any work, the mechanic will show you an
-              itemised quote of work required and associated costs - you are
-              always in control of the cost and will not get a nasty surprise.
-            </p>
+          <div
+            class="text relative flex flex-col flex-1 gap-5 w-full items-end"
+          >
+            <img
+              src="/public/assets/image8.png"
+              alt="/"
+              class="md:w-[90%] w-full h-[50vh] object-cover items-end text-end"
+            />
           </div>
-          <div>
-            <div class="text-heading text-xl font-semibold">
-              Do I have to pay on the day of the job and how can I pay?
-            </div>
-            <p class="text-base font-semibold text-gray-400">
-              Yes. Payment needs to be made at the completion of the job. We
-              accept EFTPOS, all major Credit Cards incl American Express and
-              Diners, Cash, Cheque, Fleetcard, MotorPass and MotorCharge.
-            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Repair -->
+    <section id="repair" class="w-full my-28 py-20">
+      <div class="md:max-w-[83%] md:mx-auto mx-5">
+        <div
+          class="flex justify-between items-start md:flex-row flex-col gap-10"
+        >
+          <div
+            class="text relative flex flex-col flex-1 gap-5 w-full items-start"
+          >
+            <img
+              src="/public/assets/image3.png"
+              alt="/"
+              class="md:w-[90%] w-full h-[50vh] object-cover items-end text-end"
+            />
           </div>
-          <div>
-            <div class="text-heading text-xl font-semibold">
-              Do you do repairs as well as services?
+          <div class="option md:flex-1">
+            <div class="text flex flex-col flex-1">
+              <h1 class="font-bold text-3xl mb-6">Repair</h1>
+              <div class="flex flex-col items-start gap-5">
+                <p class="text-gray-500 text-base font-medium">
+                  A well maintained vehicle is more fuel efficient, more
+                  reliable, and will last longer, making the most of your auto
+                  investment. AUTOFIXER is the perfect car care partner. Our
+                  expert auto repair technicians are trained to perform
+                  diagnostic and repair services on all makes and models, and we
+                  can take care of your factory recommended maintenance service
+                  as well. From routine maintenance like oil changes and tire
+                  rotations to wear-related repairs including brakes and brake
+                  repair, catalytic converters and exhausts, steering and
+                  suspension repairs, AUTOFIXER has you covered.
+                </p>
+                <div class="flex flex-col bg-red-200 px-8 py-8">
+                  <div>
+                    <span class="font-bold text-gray-600">Price: </span>
+                    <span class="font-bold">N10,000</span>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-600">1-2, have more</span>
+                    <span class="font-bold underline">Discuss with sales</span>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="flex items-start w-fit px-8 border border-red-400 text-black font-bold py-2 justify-start"
+              >
+                Contact us
+              </button>
             </div>
-            <p class="text-base font-semibold text-gray-400">
-              Of course, we have fully equipped mobile workshops and only employ
-              fully qualified and highly trained technicians. Click here Car
-              Repairs to find out more. Over 95% of all our work is performed on
-              site at your convenience.
-            </p>
-          </div>
-          <div>
-            <div class="text-heading text-xl font-semibold">
-              Are your technicians qualified?
-            </div>
-            <p class="text-base font-semibold text-gray-400">
-              Yes we only employ fully qualified technicians that have been in
-              the trade for 4 years or more. AutoFixer also continues their
-              training with internal and external training courses. We do train
-              some apprentices to help the trade but it's the mechanics in
-              control of working on your car.
-            </p>
           </div>
         </div>
       </div>
@@ -315,6 +377,6 @@
     <!-- owl carousel cdn links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script defer src="index.js"></script>
+    <script defer src="../../dist/index.js"></script>
   </body>
 </html>
