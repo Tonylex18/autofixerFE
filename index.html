@@ -22,11 +22,15 @@
     />
   </head>
   <body>
-    <header class="p-4 bg-black text-white  fixed top-0 w-full shadow z-20">
+    <header class="p-4 bg-black text-white fixed top-0 w-full shadow z-20">
       <nav class="flex items-center justify-between max-w-[1140px] mx-auto">
         <div class="font-bold text-xl">
           <a href="index.html">
-            <img src="/public/assets/logo.png" alt="" class="w-full md:h-16 h-10 object-cover ">
+            <img
+              src="/public/assets/logo.png"
+              alt=""
+              class="w-full md:h-12 h-10 object-cover"
+            />
           </a>
         </div>
 
@@ -116,22 +120,24 @@
       </nav>
     </header>
 
-
-    <section id="hero-section" class="max-w-[1140px] mx-auto py-10 mt-20">
+    <section id="hero-section" class="max-w-full lg:mx-auto mx-3 pb-5 my-20">
       <div
-        class="grid lg:grid-cols-3 md:grid-cols-1  items-center lg:mx-0 mx-5"
+        class="grid max-w-full relative lg:grid-cols-3 md:grid-cols-1 items-center lg:mx-0"
       >
         <div
-          class="heroText flex flex-col space-y-5 flex-1 lg:col-end-3 lg:col-span-2"
+          class="heroText container mx-auto flex flex-col space-y-5 flex-1 lg:col-end-3 lg:col-span-2 lg:ml-5 lg:pl-24"
         >
           <h1
             id="hero-title"
-            class="font-bold lg:w-[60%] md:text-5xl capitalize text-2xl fade-in"
-          ></h1>
-          <p
-            id="hero-description"
-            class="text-gray-400 font-medium fade-in lg:w-[85%]"
-          ></p>
+            class="font-bold lg:mt-0 mt-10 lg:w-[60%] md:text-5xl capitalize text-2xl fade-in"
+          >
+            Quality in car diagnosis
+          </h1>
+          <p id="hero-description" class="text-gray-400 font-medium lg:w-[85%] fade-in">
+            Our Fix service provides you with a one-stop professional service
+            for all of your auto needs. From electrical, to bodyworks and
+            mechanical faults, we have got you covered.
+          </p>
           <div class="flex space-x-5">
             <button
               class="color-red hover:bg-transparent hover:text-black border hover:border-red-500 duration-200 text-white font-medium md:text-base text-sm md:px-4 px-2 py-2"
@@ -139,7 +145,7 @@
               Schedule a visit
             </button>
             <button
-            onclick="location.href='aboutus.html';"
+              onclick="location.href='aboutus.html';"
               class="border hover:bg-red-600 hover:text-white duration-200 color-red-text md:text-base text-sm md:px-5 px-2 py-2 font-medium"
             >
               Learn more
@@ -147,15 +153,31 @@
           </div>
         </div>
         <div
-          class="heroImage h-fit lg:mt-0 mt-10 lg:col-end-4 lg:col-span-1 relative"
+          class="heroImage h-fit lg:-mt-9 mt-10 lg:col-end-4 lg:col-span-1 relative"
         >
-          <img id="hero-image" class="h-[80vh] w-full object-cover" alt="" />
+          <img
+            id="hero-image"
+            src="/public/assets/image1.png"
+            class="h-[80vh] w-[80rem] object-cover fade-in"
+            alt=""
+          />
+          <img
+            src="/public/assets/image10.png"
+            class="h-[80vh] object-cover -mt-[31.5rem] ml-5 -z-10 absolute hidden lg:block"
+            alt=""
+          />
+          <img
+            src="/public/assets/image8.png"
+            class="h-[80vh] object-cover -mt-[30.8rem] ml-10 -z-20 absolute hidden lg:block"
+            alt=""
+          />
+
           <div
             class="image-cover w-full h-16 bg-gradient-to-r from-red-500 to-red-300 opacity-90 absolute top-0"
           ></div>
         </div>
         <div
-          class="bg-black h-full flex flex-col justify-center gap-8 items-end lg:col-end-7 lg:col-span-1 text-white px-10 py-10"
+          class="bg-black lg:h-[33rem] h-full relative flex flex-col justify-center gap-8 items-end lg:col-end-7 lg:col-span-1 text-white px-10 py-10"
         >
           <div
             id="diagnosis"
@@ -187,12 +209,20 @@
 
     <!-- Section services -->
     <section id="services" class="services w-full bg-red-500">
-      <div class="max-w-[1140px] lg:flex flex-wrap items-center mx-auto color-red p-10">
-        <div class="md:grid md:grid-cols-2 gap-3 lg:flex-1 lg:w-4/5 w-full images-container">
+      <div
+        class="max-w-[1140px] lg:flex flex-wrap items-center mx-auto color-red p-10"
+      >
+        <div
+          class="md:grid md:grid-cols-2 gap-3 lg:flex-1 lg:w-4/5 w-full images-container"
+        >
           <div class="images w-full flex">
             <span class="text-white text-3xl font-bold mr-1">01</span>
             <div class="w-full">
-              <img src="/public/assets/image2.png" class="object-cover w-full" alt="" />
+              <img
+                src="/public/assets/image2.png"
+                class="object-cover w-full"
+                alt=""
+              />
               <p class="text-center font-bold text-2xl py-2 bg-white">
                 Car Diagnosis
               </p>
@@ -201,39 +231,54 @@
           <div class="images flex md:mt-0 mt-8">
             <span class="text-white text-3xl font-bold mr-1">02</span>
             <div class="w-full">
-              <img src="/public/assets/image3.png" class="w-full object-cover" alt="" />
+              <img
+                src="/public/assets/image3.png"
+                class="w-full object-cover"
+                alt=""
+              />
               <p class="text-center font-bold text-2xl py-2 bg-white">
                 Car Repair
               </p>
             </div>
           </div>
-          <div class="images flex mt-10 md:mt-auto md:col-span-2 md:justify-center mx-auto">
+          <div
+            class="images flex mt-10 md:mt-auto md:col-span-2 md:justify-center mx-auto"
+          >
             <span class="text-white text-3xl font-bold mr-1">03</span>
             <div class="w-full">
-              <img src="/public/assets/image4.png" class="object-cover lg:mx-auto w-full" alt="" />
+              <img
+                src="/public/assets/image4.png"
+                class="object-cover lg:mx-auto w-full"
+                alt=""
+              />
               <p class="text-center mx-auto font-bold text-2xl py-2 bg-white">
                 Maintenance
               </p>
             </div>
           </div>
         </div>
-    
-        <div class="text flex flex-col flex-1 lg:w-1/5 lg:pl-14 gap-6 lg:mt-0 mt-5">
+
+        <div
+          class="text flex flex-col flex-1 lg:w-1/5 lg:pl-14 gap-6 lg:mt-0 mt-5"
+        >
           <h1 class="font-medium text-5xl text-white">Services</h1>
           <p class="text-gray-300 md:w-[85%] font-medium">
-            Our Fix service provides you with a one-stop professional service for all of your auto needs.
-            From electrical, to bodyworks and mechanical faults, we have got you covered.
+            Our Fix service provides you with a one-stop professional service
+            for all of your auto needs. From electrical, to bodyworks and
+            mechanical faults, we have got you covered.
           </p>
           <div class="flex space-x-5">
-            <button onclick="location.href='services.html';" class="text-white border hover:bg-white hover:text-black duration-200 border-white font-medium px-4 py-2">
+            <button
+              onclick="location.href='services.html';"
+              class="text-white border hover:bg-white hover:text-black duration-200 border-white font-medium px-4 py-2"
+            >
               Learn more
             </button>
           </div>
         </div>
       </div>
     </section>
-    
-    
+
     <!-- Help section -->
     <section id="helpSection" class="bg-gray-color w-full py-10">
       <div
