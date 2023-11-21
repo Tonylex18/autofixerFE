@@ -120,12 +120,15 @@
       </nav>
     </header>
 
-    <section id="hero-section" class="max-w-full lg:mx-auto mx-3 pb-5 my-20">
+    <section
+      id="hero-section"
+      class="max-w-[1140px] lg:mx-auto mx-3 pb-5 pt-16"
+    >
       <div
-        class="grid max-w-full relative lg:grid-cols-3 md:grid-cols-1 items-center lg:mx-0"
+        class="flex items-center justify-between lg:flex-row flex-col"
       >
         <div
-          class="heroText container mx-auto flex flex-col space-y-5 flex-1 lg:col-end-3 lg:col-span-2 lg:ml-5 lg:pl-24"
+          class="heroText container mx-auto flex flex-col space-y-5 flex-1 lg:col-end-3 lg:col-span-2"
         >
           <h1
             id="hero-title"
@@ -155,56 +158,45 @@
             </button>
           </div>
         </div>
-        <div
-          class="heroImage h-fit lg:-mt-9 mt-10 lg:col-end-4 lg:col-span-1 relative"
-        >
-          <img
-            id="hero-image"
-            src="/public/assets/image1.png"
-            class="h-[80vh] w-[80rem] object-cover fade-in"
-            alt=""
-          />
-          <img
-            src="/public/assets/image10.png"
-            class="h-[80vh] object-cover -mt-[31.5rem] ml-5 -z-10 absolute hidden lg:block"
-            alt=""
-          />
-          <img
-            src="/public/assets/image8.png"
-            class="h-[80vh] object-cover -mt-[30.8rem] ml-10 -z-20 absolute hidden lg:block"
-            alt=""
-          />
-
-          <div
-            class="image-cover w-full h-16 bg-gradient-to-r from-red-500 to-red-300 opacity-90 absolute top-0"
-          ></div>
-        </div>
-        <div
-          class="bg-black lg:h-[33rem] h-full relative flex flex-col justify-center gap-8 items-end lg:col-end-7 lg:col-span-1 text-white px-10 py-10"
-        >
-          <div
-            id="diagnosis"
-            class="flex gap-4 items-end cursor-pointer text-gray-500 text-xl hover:text-white duration-200 active-btn"
-            onclick="changeContent(0)"
-          >
-            <span>Diagnosis</span>
-            <i class="fas fa-car"></i>
+        <div class="flex items-start justify-center lg:flex-row flex-col flex-1 h-full mt-10">
+          <div class="heroImage lg:col-end-4 lg:col-span-1 relative">
+            <img
+              id="hero-image"
+              src="/public/assets/image1.png"
+              class="lg:h-[80vh] h-[50vh] w-[80rem] object-cover fade-out"
+              alt=""
+            />
+            <div
+              class="image-cover w-full h-16 bg-gradient-to-r from-red-500 to-red-300 opacity-90 absolute top-0"
+            ></div>
           </div>
           <div
-            id="repair"
-            class="flex gap-4 items-center cursor-pointer text-gray-500 text-xl hover:text-white duration-200"
-            onclick="changeContent(1)"
+            class="bg-black flex flex-col justify-center items-end w-full gap-10 lg:h-[80vh] text-white px-10 py-10"
           >
-            <span>Repair</span>
-            <i class="fas fa-gear"></i>
-          </div>
-          <div
-            id="maintenance"
-            class="flex gap-4 items-center cursor-pointer text-gray-500 text-xl hover:text-white duration-200"
-            onclick="changeContent(2)"
-          >
-            <span>Maintenance</span>
-            <i class="fas fa-screwdriver-wrench"></i>
+            <div
+              id="diagnosis"
+              class="flex gap-4 items-end cursor-pointer text-gray-500 text-xl hover:text-white duration-200 active-btn"
+              onclick="changeContent(0)"
+            >
+              <span>Diagnosis</span>
+              <i class="fas fa-car"></i>
+            </div>
+            <div
+              id="repair"
+              class="flex gap-4 items-center cursor-pointer text-gray-500 text-xl hover:text-white duration-200"
+              onclick="changeContent(1)"
+            >
+              <span>Repair</span>
+              <i class="fas fa-gear"></i>
+            </div>
+            <div
+              id="maintenance"
+              class="flex gap-4 items-center cursor-pointer text-gray-500 text-xl hover:text-white duration-200"
+              onclick="changeContent(2)"
+            >
+              <span>Maintenance</span>
+              <i class="fas fa-screwdriver-wrench"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -611,7 +603,11 @@
           class="flex flex-col lg:flex-row gap-5 justify-between items-start"
         >
           <div class="flex-auto w-full md:w-32 lg:mb-0">
-            <img src="./public/assets/logo.png" alt="" class="md:w-full w-[50%] md:h-12 h-40 object-contain" />
+            <img
+              src="./public/assets/logo.png"
+              alt=""
+              class="md:w-full w-[50%] md:h-12 h-40 object-contain"
+            />
           </div>
           <div class="flex-auto w-full lg:w-7/12">
             <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
