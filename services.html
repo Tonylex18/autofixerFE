@@ -22,12 +22,12 @@
     />
   </head>
   <body>
-    <header class="p-4 bg-black text-white  fixed top-0 w-full shadow z-20">
+    <header class="p-4 bg-black text-white fixed top-0 w-full shadow z-20">
       <nav class="flex items-center justify-between max-w-[1140px] mx-auto">
         <div class="font-bold text-xl">
           <a href="index.html">
             <img
-              src="/public/assets/logo.png"
+              src="./public/assets/logo.png"
               alt=""
               class="md:w-full w-24 md:h-12 h-10 object-contain"
             />
@@ -103,7 +103,7 @@
           <button
             onclick="location.href='login.html';"
             id=""
-            class="py-3 px-8 color-red text-white font-medium hover:bg-red-400 duration-200 z-10 block lg:hidden top-5 left-5 absolute"
+            class="py-3 px-8 color-red text-white font-medium hover:bg-red-400 duration-200 z-10  lg:hidden top-5 left-5 btn41-43 btn-43 inline-block relative btn41-43 btn-43"
           >
             Login
           </button>
@@ -112,7 +112,7 @@
         <div class="hidden lg:flex">
           <button
             onclick="location.href='login.html';"
-            class="py-3 px-8 color-red text-white font-medium hover:bg-red-400 duration-200"
+            class="py-3 px-8 color-red text-white font-medium hover:bg-red-400 duration-200 btn41-43 btn-43 inline-block relative btn41-43 btn-43"
           >
             Login
           </button>
@@ -153,203 +153,442 @@
       class="mt-10 mb-10 sm:w-[85%] w-[90%] mx-auto"
     >
       <div
-        class="md:max-w-[1140px] w-[95%] mx-auto flex  justify-between md:gap-5 gap-2 md:py-10 py-5"
+        class="md:max-w-[1140px] w-[95%] mx-auto flex justify-between md:gap-5 gap-2 md:py-10 py-5"
       >
-      <button onclick="showSection('car-diagnosis', this)" class="w-full text-start  md:text-xl text-[12px] pb-2 current border-b-4">Car diagnosis</button>
-    <button onclick="showSection('maintenance', this)" class="w-full text-start  md:text-xl text-[12px] pb-2 border-b-4">Maintenance</button>
-    <button onclick="showSection('repair', this)" class="w-full text-start md:text-xl text-[12px] pb-2 border-b-4">Repair</button>
+        <button
+          onclick="showSection('car-diagnosis', this)"
+          class="w-full flex items-center gap-2 text-start md:text-xl text-[12px] pb-2 current border-b-4"
+        >
+        <img src="./public/assets/diagnosis.png" alt="">
+          Car diagnosis
+        </button>
+        <button
+          onclick="showSection('maintenance', this)"
+          class="w-full flex items-center gap-2 text-start md:text-xl text-[12px] pb-2 border-b-4"
+        >
+        <img src="./public/assets/maintenance.png" alt="">
+          Maintenance
+        </button>
+        <button
+          onclick="showSection('repair', this)"
+          class="w-full flex items-center gap-2 text-start md:text-xl text-[12px] pb-2 border-b-4"
+        >
+        <img src="./public/assets/repair.png" alt="">
+          Repair
+        </button>
       </div>
     </section>
 
     <!-- Send a message -->
     <!-- Car Diagnosis Section -->
-<section id="car-diagnosis" class="help bg-gray-color md:w-[75%] w-[95%] mx-auto mb-10 py-10">
-        <div
-          class="content flex gap-4 flex-col items-center justify-center mx-auto md:w-3/4 w-[95%]"
-        >
-          <div class="flex flex-col gap-5 items-center justify-center mt-10">
-            <h1
-              class="font-bold opacity-75 md:text-5xl sm:text-3xl text-2xl text-center md:w-[75%] w-[95%]"
-            >
-              Fill in the form
-            </h1>
-            <p class="text-center w-full text-gray-500">
-                Please complete the form below to contact our experts on diagnosis. They are ready to help you via video chat, call, or live chat to help resolve your car issue. If you need further assistance please use the customer care live chat to the bottom right of this page or call us on +234-704-554-3003
-            </p>
+    <section
+      id="car-diagnosis"
+      class="help bg-gray-color md:w-[75%] w-[95%] mx-auto mb-10 py-10"
+    >
+      <div
+        class="content flex gap-4 flex-col items-center justify-center mx-auto md:w-3/4 w-[95%]"
+      >
+        <div class="flex flex-col gap-5 items-center justify-center mt-10">
+          <h1
+            class="font-bold opacity-75 md:text-5xl sm:text-3xl text-2xl text-center md:w-[75%] w-[95%]"
+          >
+            Fill in the form
+          </h1>
+          <p class="text-center w-full text-gray-500">
+            Please complete the form below to contact our experts on diagnosis.
+            They are ready to help you via video chat, call, or live chat to
+            help resolve your car issue. If you need further assistance please
+            use the customer care live chat to the bottom right of this page or
+            call us on +234-704-554-3003
+          </p>
+        </div>
+      </div>
+      <div
+        class="contactUs flex flex-col items-center justify-center max-w-[90%] md:mx-auto mx-5 mt-20"
+      >
+        <form action="" class="md:w-[70%] w-full">
+          <div
+            class="flex md:flex-row flex-col items-center justify-evenly gap-5 mt-5"
+          >
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">First name</label>
+              <input
+                type="text"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="Anthony"
+              />
+            </div>
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Last name</label>
+              <input
+                type="text"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="Alex"
+              />
+            </div>
           </div>
-        </div>
-        <div class="contactUs flex flex-col items-center justify-center max-w-[90%] md:mx-auto mx-5 mt-20">
-          <form action="" class="md:w-[70%] w-full">
-            <div class="flex md:flex-row flex-col items-center justify-evenly gap-5 mt-5">
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">First name</label>
-                <input type="text" class="w-full px-4 py-4 outline-none" placeholder="Anthony" />
-              </div>
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Last name</label>
-                <input type="text" class="w-full px-4 py-4 outline-none" placeholder="Alex" />
-              </div>
+          <div
+            class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10"
+          >
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Email address</label>
+              <input
+                type="email"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="agadaanthony344@gmail.com"
+              />
             </div>
-            <div class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10">
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Email address</label>
-                <input type="email" class="w-full px-4 py-4 outline-none" placeholder="agadaanthony344@gmail.com" />
-              </div>
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Phone number</label>
-                <input type="number" class="w-full px-4 py-4 outline-none" placeholder="07039018318" />
-              </div>
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Phone number</label>
+              <input
+                type="number"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="07039018318"
+              />
             </div>
-            <div class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10">
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Car make</label>
-                <input type="email" class="w-full px-4 py-4 outline-none" placeholder="agadaanthony344@gmail.com" />
-              </div>
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Car year</label>
-                <input type="number" class="w-full px-4 py-4 outline-none" placeholder="07039018318" />
-              </div>
-            </div>
-            <div class="flex flex-col gap-2 mt-10">
-                <label class="font-bold text-gray-700">Comment</label>
-                <textarea name="" id="" cols="5" rows="5" class="resize-none outline-none px-4 py-4" placeholder="its urgent!!!"></textarea>
-            </div>
-            <button class="flex items-center justify-center mx-auto mt-10 color-red px-16 font-bold py-3 text-white w-fit">Submit</button>
-          </form>
-        </div>
-      </section>
-    
-      <!-- Maintenance Section -->
-<section id="maintenance" class="help bg-gray-color md:w-[75%] w-[95%] mx-auto mb-10 py-10" style="display: none;">
-        <div
-          class="content flex gap-4 flex-col items-center justify-center mx-auto md:w-3/4 w-[95%]"
-        >
-          <div class="flex flex-col gap-5 items-center justify-center mt-10">
-            <h1
-              class="font-bold opacity-75 md:text-5xl sm:text-3xl text-2xl text-center md:w-[75%] w-[95%]"
-            >
-              Fill in the form
-            </h1>
-            <p class="text-center w-full text-gray-500">
-                Please complete the form below to contact our experts on diagnosis. They are ready to help you via video chat, call, or live chat to help resolve your car issue. If you need further assistance please use the customer care live chat to the bottom right of this page or call us on +234-704-554-3003
-            </p>
           </div>
-        </div>
-        <div class="contactUs flex flex-col items-center justify-center max-w-[90%] md:mx-auto mx-5 mt-20">
-          <form class="md:w-[70%] w-full">
-            <div class="flex md:flex-row flex-col items-center justify-evenly gap-5 mt-5">
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">First name</label>
-                <input type="text" class="w-full px-4 py-4 outline-none" placeholder="Anthony" />
-              </div>
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Last name</label>
-                <input type="text" class="w-full px-4 py-4 outline-none" placeholder="Alex" />
-              </div>
+          <div
+            class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10"
+          >
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Car make</label>
+              <input
+                type="email"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="agadaanthony344@gmail.com"
+              />
             </div>
-            <div class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10">
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Email address</label>
-                <input type="email" class="w-full px-4 py-4 outline-none" placeholder="agadaanthony344@gmail.com" />
-              </div>
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Phone number</label>
-                <input type="number" class="w-full px-4 py-4 outline-none" placeholder="07039018318" />
-              </div>
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Car year</label>
+              <input
+                type="number"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="07039018318"
+              />
             </div>
-            <div class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10">
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Car make</label>
-                <input type="email" class="w-full px-4 py-4 outline-none" placeholder="agadaanthony344@gmail.com" />
-              </div>
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Car year</label>
-                <input type="number" class="w-full px-4 py-4 outline-none" placeholder="07039018318" />
-              </div>
-            </div>
-            <div class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10">
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Specify the date for the maintainance</label>
-                <input type="email" class="w-full px-4 py-4 outline-none" placeholder="agadaanthony344@gmail.com" />
-              </div>
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Specify the time for the maintainance</label>
-                <input type="number" class="w-full px-4 py-4 outline-none" placeholder="07039018318" />
-              </div>
-            </div>
-            <div class="flex flex-col gap-2 mt-10">
-                <label class="font-bold text-gray-700">Would you like to subscribe to a maintenance plan</label>
-                <textarea name="" id="" cols="5" rows="2" class="resize-none outline-none px-4 py-4" placeholder="its urgent!!!"></textarea>
-            </div>
-            <div class="flex flex-col gap-2 mt-10">
-                <label class="font-bold text-gray-700">Comment</label>
-                <textarea name="" id="" cols="5" rows="5" class="resize-none outline-none px-4 py-4" placeholder="its urgent!!!"></textarea>
-            </div>
-            <button class="flex items-center justify-center mx-auto mt-10 color-red px-16 font-bold py-3 text-white w-fit">Submit</button>
-          </form>
-        </div>
-      </section>
-    
-      <!-- Repair Section -->
-<section id="repair" class="help bg-gray-color md:w-[75%] w-[95%] mx-auto mb-10 py-10" style="display: none;">
-        <div
-          class="content flex gap-4 flex-col items-center justify-center mx-auto md:w-3/4 w-[95%]"
-        >
-          <div class="flex flex-col gap-5 items-center justify-center mt-10">
-            <h1
-              class="font-bold opacity-75 md:text-5xl sm:text-3xl text-2xl text-center md:w-[75%] w-[95%]"
-            >
-              Fill in the form
-            </h1>
-            <p class="text-center w-full text-gray-500">
-                Please complete the form below to contact our experts on diagnosis. They are ready to help you via video chat, call, or live chat to help resolve your car issue. If you need further assistance please use the customer care live chat to the bottom right of this page or call us on +234-704-554-3003
-            </p>
           </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <label class="font-bold text-gray-700">Comment</label>
+            <textarea
+              name=""
+              id=""
+              cols="5"
+              rows="5"
+              class="resize-none outline-none px-4 py-4"
+              placeholder="its urgent!!!"
+            ></textarea>
+          </div>
+          <button
+            class="flex items-center justify-center mx-auto mt-10 color-red px-16 font-bold py-3 text-white w-fit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Maintenance Section -->
+    <section
+      id="maintenance"
+      class="help bg-gray-color md:w-[75%] w-[95%] mx-auto mb-10 py-10"
+      style="display: none"
+    >
+      <div
+        class="content flex gap-4 flex-col items-center justify-center mx-auto md:w-3/4 w-[95%]"
+      >
+        <div class="flex flex-col gap-5 items-center justify-center mt-10">
+          <h1
+            class="font-bold opacity-75 md:text-5xl sm:text-3xl text-2xl text-center md:w-[75%] w-[95%]"
+          >
+            Fill in the form
+          </h1>
+          <p class="text-center w-full text-gray-500">
+            Please complete the form below to contact our experts on diagnosis.
+            They are ready to help you via video chat, call, or live chat to
+            help resolve your car issue. If you need further assistance please
+            use the customer care live chat to the bottom right of this page or
+            call us on +234-704-554-3003
+          </p>
         </div>
-        <div class="contactUs flex flex-col items-center justify-center max-w-[90%] md:mx-auto mx-5 mt-20">
-          <form class="md:w-[70%] w-full">
-            <div class="flex md:flex-row flex-col items-center justify-evenly gap-5 mt-5">
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">First name</label>
-                <input type="text" class="w-full px-4 py-4 outline-none" placeholder="Anthony" />
-              </div>
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Last name</label>
-                <input type="text" class="w-full px-4 py-4 outline-none" placeholder="Alex" />
-              </div>
+      </div>
+      <div
+        class="contactUs flex flex-col items-center justify-center max-w-[90%] md:mx-auto mx-5 mt-20"
+      >
+        <form class="md:w-[70%] w-full">
+          <div
+            class="flex md:flex-row flex-col items-center justify-evenly gap-5 mt-5"
+          >
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">First name</label>
+              <input
+                type="text"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="Anthony"
+              />
             </div>
-            <div class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10">
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Email address</label>
-                <input type="email" class="w-full px-4 py-4 outline-none" placeholder="agadaanthony344@gmail.com" />
-              </div>
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Phone number</label>
-                <input type="number" class="w-full px-4 py-4 outline-none" placeholder="07039018318" />
-              </div>
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Last name</label>
+              <input
+                type="text"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="Alex"
+              />
             </div>
-            <div class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10">
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Car make</label>
-                <input type="email" class="w-full px-4 py-4 outline-none" placeholder="agadaanthony344@gmail.com" />
-              </div>
-              <div class="form-field w-full flex flex-col gap-3">
-                <label class="font-bold text-gray-700">Car year</label>
-                <input type="number" class="w-full px-4 py-4 outline-none" placeholder="07039018318" />
-              </div>
+          </div>
+          <div
+            class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10"
+          >
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Email address</label>
+              <input
+                type="email"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="agadaanthony344@gmail.com"
+              />
             </div>
-            <div class="flex flex-col gap-2 mt-10">
-                <label class="font-bold text-gray-700">Would you be needing an onset mechanic</label>
-                <textarea name="" id="" cols="5" rows="2" class="resize-none outline-none px-4 py-4" placeholder="its urgent!!!"></textarea>
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Phone number</label>
+              <input
+                type="number"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="07039018318"
+              />
             </div>
-            <div class="flex flex-col gap-2 mt-10">
-                <label class="font-bold text-gray-700">Comment</label>
-                <textarea name="" id="" cols="5" rows="5" class="resize-none outline-none px-4 py-4" placeholder="its urgent!!!"></textarea>
+          </div>
+          <div
+            class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10"
+          >
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Car make</label>
+              <input
+                type="email"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="agadaanthony344@gmail.com"
+              />
             </div>
-            <button class="flex items-center justify-center mx-auto mt-10 color-red px-16 font-bold py-3 text-white w-fit">Submit</button>
-          </form>
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Car year</label>
+              <input
+                type="number"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="07039018318"
+              />
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10"
+          >
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700"
+                >Specify the date for the maintainance</label
+              >
+              <input
+                type="email"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="agadaanthony344@gmail.com"
+              />
+            </div>
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700"
+                >Specify the time for the maintainance</label
+              >
+              <input
+                type="number"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="07039018318"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <label class="font-bold text-gray-700"
+              >Would you like to subscribe to a maintenance plan</label
+            >
+            <textarea
+              name=""
+              id=""
+              cols="5"
+              rows="2"
+              class="resize-none outline-none px-4 py-4"
+              placeholder="its urgent!!!"
+            ></textarea>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <label class="font-bold text-gray-700">Comment</label>
+            <textarea
+              name=""
+              id=""
+              cols="5"
+              rows="5"
+              class="resize-none outline-none px-4 py-4"
+              placeholder="its urgent!!!"
+            ></textarea>
+          </div>
+          <button
+            class="flex items-center justify-center mx-auto mt-10 color-red px-16 font-bold py-3 text-white w-fit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Repair Section -->
+    <section
+      id="repair"
+      class="help bg-gray-color md:w-[75%] w-[95%] mx-auto mb-10 py-10"
+      style="display: none"
+    >
+      <div
+        class="content flex gap-4 flex-col items-center justify-center mx-auto md:w-3/4 w-[95%]"
+      >
+        <div class="flex flex-col gap-5 items-center justify-center mt-10">
+          <h1
+            class="font-bold opacity-75 md:text-5xl sm:text-3xl text-2xl text-center md:w-[75%] w-[95%]"
+          >
+            Fill in the form
+          </h1>
+          <p class="text-center w-full text-gray-500">
+            Please complete the form below to contact our experts on diagnosis.
+            They are ready to help you via video chat, call, or live chat to
+            help resolve your car issue. If you need further assistance please
+            use the customer care live chat to the bottom right of this page or
+            call us on +234-704-554-3003
+          </p>
         </div>
-      </section>
+      </div>
+      <div
+        class="contactUs flex flex-col items-center justify-center max-w-[90%] md:mx-auto mx-5 mt-20"
+      >
+        <form class="md:w-[70%] w-full">
+          <div
+            class="flex md:flex-row flex-col items-center justify-evenly gap-5 mt-5"
+          >
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">First name</label>
+              <input
+                type="text"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="Anthony"
+              />
+            </div>
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Last name</label>
+              <input
+                type="text"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="Alex"
+              />
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10"
+          >
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Email address</label>
+              <input
+                type="email"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="agadaanthony344@gmail.com"
+              />
+            </div>
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Phone number</label>
+              <input
+                type="number"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="07039018318"
+              />
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-evenly md:flex-row flex-col gap-5 mt-10"
+          >
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Car make</label>
+              <input
+                type="email"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="agadaanthony344@gmail.com"
+              />
+            </div>
+            <div class="form-field w-full flex flex-col gap-3">
+              <label class="font-bold text-gray-700">Car year</label>
+              <input
+                type="number"
+                class="w-full px-4 py-4 outline-none"
+                placeholder="07039018318"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <label class="font-bold text-gray-700"
+              >Would you be needing an onset mechanic</label
+            >
+            <textarea
+              name=""
+              id=""
+              cols="5"
+              rows="2"
+              class="resize-none outline-none px-4 py-4"
+              placeholder="its urgent!!!"
+            ></textarea>
+          </div>
+          <div class="flex flex-col gap-2 mt-10">
+            <label class="font-bold text-gray-700">Comment</label>
+            <textarea
+              name=""
+              id=""
+              cols="5"
+              rows="5"
+              class="resize-none outline-none px-4 py-4"
+              placeholder="its urgent!!!"
+            ></textarea>
+          </div>
+          <button
+            class="flex items-center justify-center mx-auto mt-10 color-red px-16 font-bold py-3 text-white w-fit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- News letter -->
+    <section class="relative flex items-center">
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('./public/assets/image13.jpg')"
+      ></div>
+
+      <!-- Text Overlay -->
+      <div
+        class="relative z-10 py-10 text-white container mx-auto md:w-3/4 w-[95%]"
+      >
+        <h1 class="text-2xl md:text-4xl font-semibold mb-4">
+          Subscribe to our <br />
+          newsletter
+        </h1>
+        <p class="md:text-xs font-medium w-full md:w-[50%]">
+          Lorem ipsum dolor sit amet consectetur. Leo nunc aliquam lorem mi
+          elementum mi ac eget. Nunc ac tristique eleifend elementum mauris quam
+          morbi.
+        </p>
+        <form class="mt-5" action="">
+          <label for="email" class="text-base font-medium">Email address</label>
+          <div class="mt-2">
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="johndoe@gmail.com"
+              class="outline-none border-none w-[50%] md:w-[40%] text-black py-3 px-4"
+            />
+            <button class="color-red py-3 px-10 font-bold">Enter</button>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <!-- footer section -->
 
@@ -358,9 +597,13 @@
         <div
           class="flex flex-col lg:flex-row gap-5 justify-between items-start"
         >
-        <div class="flex-auto w-full md:w-32 lg:mb-0">
-          <img src="./public/assets/logo.png" alt="" class="md:w-full w-[50%] md:h-12 h-40 object-contain" />
-        </div>
+          <div class="flex-auto w-full md:w-32 lg:mb-0">
+            <img
+              src="./public/assets/logo.png"
+              alt=""
+              class="md:w-full w-[50%] md:h-12 h-40 object-contain"
+            />
+          </div>
           <div class="flex-auto w-full lg:w-7/12">
             <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
               <div>

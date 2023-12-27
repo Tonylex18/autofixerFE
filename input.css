@@ -219,3 +219,68 @@ tbody td:is([data-type="number"]) {
 .displace {
     transform: translate(-50%, -50%);
 }
+
+.btn41-43,
+.btn42-43 {
+    padding: 10px 25px;
+    font-weight: 500;
+    background: #FC0000;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .btn-43,
+  .btn-42 {
+    /* border: 2px solid rgb(255, 255, 255); */
+    z-index: 1;
+    color: white;
+  }
+  
+  .btn-43:after,
+  .btn-42:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-43:hover,
+  .btn-42:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn-43:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+
+  
+
+
+  .btn42-43 {
+    color: #000;
+    background: transparent!important;
+  }
+  
+  .btn-42:after {
+    background: #FC0000;
+    color: #fff!important;
+  }
+  
+  .btn-42:hover:after {
+    top: 0;
+    height: 100%;
+  }
+  
+  .btn-42:active {
+    top: 2px;
+  }

@@ -27,7 +27,7 @@
         <div class="font-bold text-xl">
           <a href="index.html">
             <img
-              src="/public/assets/logo.png"
+              src="./public/assets/logo.png"
               alt=""
               class="md:w-full w-24 md:h-12 h-10 object-contain"
             />
@@ -103,7 +103,7 @@
           <button
             onclick="location.href='login.html';"
             id=""
-            class="py-3 px-8 color-red text-white font-medium hover:bg-red-400 duration-200 z-10 block lg:hidden top-5 left-5 absolute"
+            class="py-3 px-8 color-red text-white font-medium hover:bg-red-400 duration-200 z-10  lg:hidden top-5 left-5 btn41-43 btn-43 inline-block relative btn41-43 btn-43"
           >
             Login
           </button>
@@ -112,7 +112,7 @@
         <div class="hidden lg:flex">
           <button
             onclick="location.href='login.html';"
-            class="py-3 px-8 color-red text-white font-medium hover:bg-red-400 duration-200"
+            class="py-3 px-8 color-red text-white font-medium hover:bg-red-400 duration-200 btn41-43 btn-43 inline-block relative btn41-43 btn-43"
           >
             Login
           </button>
@@ -123,7 +123,7 @@
     <!-- Content heading -->
     <section id="contactUs" class="mt-10 md:pt-20 pt-16 mb-10 w-full">
       <div
-        class="bg-red-600 md:max-w-[1140px] w-[95%] mx-auto flex items-center justify-center md:py-10 py-5"
+        class="bg-red-600 md:max-w-[1120px] w-[95%] mx-auto flex items-center justify-center md:py-10 py-5"
       >
         <h1 class="text-white md:text-5xl text-2xl font-medium">.Fix</h1>
       </div>
@@ -131,7 +131,7 @@
 
     <section
       id="description"
-      class="md:max-w-[1140px] w-[90%] mx-auto my-28"
+      class="md:max-w-[1120px] w-[90%] mx-auto my-28"
     >
       <div class="flex justify-between items-start md:flex-row flex-col gap-10">
         <div class="option md:flex-1">
@@ -168,7 +168,7 @@
             <span class="text-red-400 ">WhatsApp - 08066245523</span>
           </div>
           <img
-            src="/public/assets/image9.png"
+            src="./public/assets/image9.png"
             alt="/"
             class="md:w-[70%] w-full h-[70vh] object-cover items-end text-end"
           />
@@ -178,7 +178,7 @@
 
     <!-- Information section -->
     <section id="information" class="information w-full bg-red-600">
-      <div class="max-w-[1240px] mx-auto color-red p-10 py-20 h-full">
+      <div class="max-w-[1120px] mx-auto color-red p-10 py-20 h-full">
         <div
           class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-[3px] mt-8"
         >
@@ -220,6 +220,27 @@
         </div>
       </div>
     </section>
+
+    <!-- News letter -->
+    <section class="relative flex items-center">
+      <!-- Background Image -->
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./public/assets/image13.jpg');"></div>
+
+      <!-- Text Overlay -->
+      <div class="relative z-10 py-10 text-white container mx-auto md:w-[1120px] w-[95%]">
+          <h1 class="text-2xl md:text-4xl font-semibold mb-4">Subscribe to our <br> newsletter</h1>
+          <p class="md:text-xs font-medium w-full md:w-[50%]">
+            Lorem ipsum dolor sit amet consectetur. Leo nunc aliquam lorem mi elementum mi ac eget. Nunc ac tristique eleifend elementum mauris quam morbi.
+          </p>
+          <form class="mt-5" action="">
+            <label for="email" class="text-base font-medium">Email address</label>
+            <div class="mt-2">
+              <input id="email" name="email" type="text" placeholder="johndoe@gmail.com" class="outline-none border-none w-[50%] md:w-[40%] text-black py-3 px-4">
+              <button class="color-red py-3 px-10 font-bold">Enter</button>
+            </div>
+          </form>
+      </div>
+  </section>
 
     <!-- footer section -->
 
