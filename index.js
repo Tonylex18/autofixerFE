@@ -1,3 +1,132 @@
+// Animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    // console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("review");
+    } else {
+      entry.target.classList.remove("review");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".encrypt");
+hiddenElements.forEach((el) => {
+  observer.observe(el);
+});
+
+let activeTabIndex = 0;
+let isCardSelected = false;
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Hide all body sections except the first one
+  const sections = document.querySelectorAll(".body > div");
+  for (let i = 1; i < sections.length; i++) {
+    sections[i].classList.add("hidden");
+  }
+
+
+  // Show the first body section and the "Next" button
+  sections[0].classList.remove("hidden");
+  const nextButton = document.querySelector(".next-button");
+  nextButton.classList.remove("hidden");
+  nextButton.disabled = true;
+
+  // Initialize tabs variable
+  tabs = document.querySelectorAll(".tab div");
+});
+
+function switchTab(index) {
+  const tabs = document.querySelectorAll(".tab div");
+  const sections = document.querySelectorAll(".body > div");
+
+  // tabs[activeTabIndex].classList.remove("active-text", "active-quote");
+  sections[activeTabIndex].classList.add("hidden");
+
+  activeTabIndex = index;
+
+  tabs[activeTabIndex].classList.add("active-text", "active-quote");
+  sections[activeTabIndex].classList.remove("hidden");
+
+  // Add "active-quote" class to the icons of the currently active tab
+  const activeTabIcon = tabs[activeTabIndex].querySelector(".fa-circle-check");
+  if (activeTabIcon) {
+    activeTabIcon.classList.add("active-quote");
+  }
+
+  // Show or hide the "Next" button based on the active tab
+  if (activeTabIndex === tabs.length - 1) {
+    document.querySelector(".next-button").classList.add("hidden");
+  } else {
+    document.querySelector(".next-button").classList.remove("hidden");
+  }
+
+  // Enable or disable the "Next" button based on card selection
+  updateNextButtonState();
+}
+
+
+function changeCategory(category, cardId) {
+  const h1Element = document.getElementById('headingQuote');
+  h1Element.textContent = `${category}`;
+
+  // Remove focus from the previously selected card
+  const prevSelectedCard = document.querySelector('.selected-card');
+  if (prevSelectedCard) {
+    prevSelectedCard.classList.remove('selected-card');
+  }
+
+  // Add focus to the selected card
+  const selectedCard = document.getElementById(cardId);
+  if (selectedCard) {
+    selectedCard.classList.add('selected-card');
+  }
+
+  // Set the flag indicating that a card is selected
+  isCardSelected = true;
+
+  // Enable or disable the "Next" button based on card selection
+  updateNextButtonState();
+}
+
+function updateNextButtonState() {
+  // Enable or disable the "Next" button based on card selection and other validations
+  const nextButton = document.querySelector(".next-button");
+  nextButton.disabled = !isCardSelected || !validateForm();
+}
+
+
+function nextTab() {
+  // Validate before moving to the next tab
+  if (validateForm()) {
+    let nextIndex = activeTabIndex + 1;
+    if (nextIndex >= tabs.length) {
+      nextIndex = 0;
+    }
+    switchTab(nextIndex);
+  }
+}
+
+function validateForm() {
+  if (!isCardSelected) {
+    alert("Please select a card before proceeding.");
+    return false;
+  }
+  return true;
+}
+
+function nextTab() {
+  let nextIndex = activeTabIndex + 1;
+  if (nextIndex >= tabs.length) {
+    nextIndex = 0;
+  }
+  switchTab(nextIndex);
+}
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("menu");
@@ -121,8 +250,6 @@ document.getElementById("maintenance").addEventListener("click", function () {
 changeContent(currentIndex, document.getElementById(getButtonId(currentIndex)));
 
 setInterval(autoplay, 5000);
-
-
 
 $(".owl-carousel").owlCarousel({
   loop: true,
