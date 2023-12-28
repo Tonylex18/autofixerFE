@@ -1,9 +1,11 @@
 // Animations
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
-    // console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("review");
+      
+      // Unobserve the element once it has been reviewed
+      observer.unobserve(entry.target);
     } else {
       entry.target.classList.remove("review");
     }
@@ -14,6 +16,7 @@ const hiddenElements = document.querySelectorAll(".encrypt");
 hiddenElements.forEach((el) => {
   observer.observe(el);
 });
+
 
 let activeTabIndex = 0;
 let isCardSelected = false;
