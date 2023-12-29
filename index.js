@@ -59,17 +59,14 @@ function switchTab(index) {
 
   sections[activeTabIndex].classList.remove("hidden");
 
-  if (prevIndex > activeTabIndex) {
+  if (prevIndex !== activeTabIndex) {
     tabs[prevIndex].classList.remove("active-text", "active-quote");
     const prevTabIcon = tabs[prevIndex].querySelector(".fa-circle-check");
     if (prevTabIcon) {
       prevTabIcon.classList.remove("active-quote");
     }
-  } else {
-    sections[prevIndex].classList.remove("hidden");
+    sections[prevIndex].classList.add("hidden");
   }
-
-  sections[prevIndex].classList.add("hidden");
 
   // Show or hide the "Next" and "Previous" buttons based on the active tab
   const nextButton = document.querySelector(".next-button");
@@ -84,13 +81,6 @@ function switchTab(index) {
   } else {
     nextButton.classList.remove("hidden");
     prevButton.classList.remove("hidden");
-  }
-
-}
-
-function handleNoButtonClick() {
-  if (activeTabIndex === tabs.length - 1) {
-    previousTab();
   }
 }
 
@@ -117,6 +107,12 @@ function changeCategory(category, cardId) {
   updateNextButtonState();
 }
 
+function updateNextButtonState() {
+  // Enable or disable the "Next" button based on card selection and other validations
+  const nextButton = document.querySelector(".next-button");
+  nextButton.disabled = !isCardSelected || !validateForm();
+}
+
 function previousTab() {
   let prevIndex = activeTabIndex - 1;
   if (prevIndex < 0) {
@@ -126,14 +122,37 @@ function previousTab() {
 }
 
 function nextTab() {
+  // Validate before moving to the next tab
+  if (validateForm()) {
+    let nextIndex = activeTabIndex + 1;
+    if (nextIndex >= tabs.length) {
+      nextIndex = 0;
+    }
+    switchTab(nextIndex);
+  }
+}
+
+function handleNoButtonClick() {
+  if (activeTabIndex === tabs.length - 1) {
+    previousTab();
+  }
+}
+
+function validateForm() {
+  if (!isCardSelected) {
+    alert("Please select a card before proceeding.");
+    return false;
+  }
+  return true;
+}
+
+function nextTab() {
   let nextIndex = activeTabIndex + 1;
   if (nextIndex >= tabs.length) {
     nextIndex = 0;
   }
   switchTab(nextIndex);
 }
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menu-toggle");
