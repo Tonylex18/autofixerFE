@@ -151,10 +151,12 @@
           <div class="flex flex-col lg:flex-row items-start mt-10">
             <!-- Tab Part (30% width) -->
             <div class="tab w-full md:w-[30%] flex flex-col gap-6">
-              <div id="chooseCar" class="flex items-center gap-2 text-gray-400 active-text" onclick="switchTab(0)">
-                <i
-                  class="fa-regular fa-circle-check text-4xl active-quote"
-                ></i>
+              <div
+                id="chooseCar"
+                class="flex items-center gap-2 text-gray-400 active-text"
+                onclick="switchTab(0)"
+              >
+                <i class="fa-regular fa-circle-check text-4xl active-quote"></i>
                 <span class="text-xl">Choose a service</span>
               </div>
               <div id="carBrand" class="flex items-center gap-2 text-gray-400">
@@ -165,11 +167,17 @@
                 <i class="fa-regular fa-circle-check text-4xl"></i>
                 <span class="text-xl">Enter car model</span>
               </div>
-              <div id="contactDetials" class="flex items-center gap-2 text-gray-400">
+              <div
+                id="contactDetials"
+                class="flex items-center gap-2 text-gray-400"
+              >
                 <i class="fa-regular fa-circle-check text-4xl"></i>
                 <span class="text-xl">Enter contact details</span>
               </div>
-              <div id="DescribeIssues" class="flex items-center gap-2 text-gray-400">
+              <div
+                id="DescribeIssues"
+                class="flex items-center gap-2 text-gray-400"
+              >
                 <i class="fa-regular fa-circle-check text-4xl"></i>
                 <span class="text-xl">Describe the issues</span>
               </div>
@@ -183,31 +191,62 @@
             <div
               class="body flex flex-col justify-center lg:mt-0 mt-10 w-full md:w-2/3 gap-10"
             >
-              <div id="chooseCar" onclick="switchTab(0)" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <div id="carDiagnosisCard" onclick="changeCategory('Car Diagnosis', 'carDiagnosisCard')" class="group flex flex-col gap-1 items-center bg-gray-200 p-8 cursor-pointer hover:border hover:border-red-500 duration-200">
-                    <div>
-                      <img src="./public/assets/svgs/diagnosis.svg" alt="car diagnosis icon" />
-                    </div>
-                    <span>Car Diagnosis</span>
+              <div
+                id="chooseCar"
+                onclick="switchTab(0)"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+              >
+                <div
+                  id="carDiagnosisCard"
+                  onclick="changeCategory('Car Diagnosis', 'carDiagnosisCard')"
+                  class="group flex flex-col gap-1 items-center bg-gray-200 p-8 cursor-pointer hover:border hover:border-red-500 duration-200"
+                >
+                  <div>
+                    <img
+                      src="./public/assets/svgs/diagnosis.svg"
+                      alt="car diagnosis icon"
+                    />
                   </div>
-                  
-                  <div id="maintenanceCard" onclick="changeCategory('Maintenance', 'maintenanceCard')" class="flex flex-col gap-1 items-center bg-gray-200 p-8 cursor-pointer hover:border hover:border-red-500 duration-200">
-                    <img src="./public/assets/svgs/maintenance.svg" alt="car maintenance icon" />
-                    <span>Maintenance</span>
-                  </div>
-                  
-                  <div id="repairCard" onclick="changeCategory('Repair', 'repairCard')" class="flex flex-col gap-1 items-center bg-gray-200 py-8 px-12 cursor-pointer hover:border hover:border-red-500 duration-200">
-                    <img src="./public/assets/svgs/repair.svg" alt="car repair icon" />
-                    <span>Repair</span>
-                  </div>
-                  
+                  <span>Car Diagnosis</span>
+                </div>
+
+                <div
+                  id="maintenanceCard"
+                  onclick="changeCategory('Maintenance', 'maintenanceCard')"
+                  class="flex flex-col gap-1 items-center bg-gray-200 p-8 cursor-pointer hover:border hover:border-red-500 duration-200"
+                >
+                  <img
+                    src="./public/assets/svgs/maintenance.svg"
+                    alt="car maintenance icon"
+                  />
+                  <span>Maintenance</span>
+                </div>
+
+                <div
+                  id="repairCard"
+                  onclick="changeCategory('Repair', 'repairCard')"
+                  class="flex flex-col gap-1 items-center bg-gray-200 py-8 px-12 cursor-pointer hover:border hover:border-red-500 duration-200"
+                >
+                  <img
+                    src="./public/assets/svgs/repair.svg"
+                    alt="car repair icon"
+                  />
+                  <span>Repair</span>
+                </div>
               </div>
-              
+
               <div id="carBrand" class="shadow-xl px-10 py-24">
                 <form action="" class="flex flex-col">
-                  <label for="brand" class="font-bold text-lg">Select a car brand</label>
+                  <label for="brand" class="font-bold text-lg"
+                    >Select a car brand</label
+                  >
 
-                  <select name="brand" id="brand" class="bg-gray-100 px-5 py-5 mt-5 border-none outline-none">
+                  <select
+                    name="brand"
+                    id="brand"
+                    class="bg-gray-100 px-5 py-5 mt-5 border-none outline-none"
+                  >
+                    <option>Choose a car brand...</option>
                     <option value="volvo">Toyota</option>
                     <option value="saab">Saab</option>
                     <option value="mercedes">Mercedes</option>
@@ -218,10 +257,17 @@
 
               <div id="carModel" class="shadow-xl px-10 py-24">
                 <form action="" class="flex flex-col">
-                  <label for="model" class="font-bold text-lg">Select a car model</label>
+                  <label for="model" class="font-bold text-lg"
+                    >Select a car model</label
+                  >
 
-                  <select name="model" id="model" class="bg-gray-100 px-5 py-5 mt-5 border-none outline-none">
-                    <option value="volvo">Toyota</option>
+                  <select
+                    name="model"
+                    id="model"
+                    class="bg-gray-100 px-5 py-5 mt-5 border-none outline-none"
+                  >
+                    <option>choose a car model...</option>
+                    <option value="toyota">Toyota</option>
                     <option value="saab">Saab</option>
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>
@@ -229,18 +275,44 @@
                 </form>
               </div>
 
-              <div id="contactDetials"  class="shadow-xl px-10 py-24">
+              <div id="contactDetials" class="shadow-xl px-10 py-10">
                 <form action="" class="flex flex-col">
-                  <label for="email" class="font-bold text-lg"
-                    >Enter email</label
-                  >
-                  <input
-                    id="email"
-                    name="email"
-                    type="text"
-                    placeholder="johndoe@gmail.com"
-                    class="bg-gray-100 px-5 py-5 mt-5 border-none outline-none"
-                  />
+                  <div class="flex flex-col">
+                    <label for="name" class="font-normal text-lg"
+                      >Full Name</label
+                    >
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      placeholder="john doe"
+                      class="bg-gray-100 px-5 py-2 mt-2 border-none outline-none"
+                    />
+                  </div>
+                  <div class="flex flex-col mt-2">
+                    <label for="number" class="font-normal text-lg"
+                      >Phone number</label
+                    >
+                    <input
+                      id="number"
+                      name="number"
+                      type="number"
+                      placeholder="07039018318"
+                      class="bg-gray-100 px-5 py-2 mt-2 border-none outline-none"
+                    />
+                  </div>
+                  <div class="flex flex-col mt-2">
+                    <label for="email" class="font-normal text-lg"
+                      >Enter email</label
+                    >
+                    <input
+                      id="email"
+                      name="email"
+                      type="text"
+                      placeholder="johndoe@gmail.com"
+                      class="bg-gray-100 px-5 py-2 mt-2 border-none outline-none"
+                    />
+                  </div>
                 </form>
               </div>
 
@@ -254,27 +326,54 @@
                     name="description"
                     type="text"
                     placeholder="johndoe@gmail.com"
-                    rows="2" cols="20"
+                    rows="2"
+                    cols="20"
                     class="bg-gray-100 px-5 py-5 mt-5 border-none outline-none"
-                    style="resize: none;"
+                    style="resize: none"
                   ></textarea>
                 </form>
               </div>
 
-              <div id="submit" class="shadow-xl px-10 py-24 flex items-center justify-center flex-col">
+              <div
+                id="submit"
+                class="shadow-xl px-10 py-24 flex items-center justify-center flex-col"
+              >
                 <p>Are you sure you are done?</p>
                 <div class="mt-5 flex items-center gap-10">
-                    <button class="py-2 px-10 border border-red-500 color-red text-white font-medium hover:bg-red-400 duration-200 btn41-43 btn-43 inline-block relative btn41-43 btn-43 mr-6">Yes</button>
-                    <button class="py-2 px-10 border border-red-500 color-red text-white font-medium hover:bg-red-400 duration-200 btn41-43 btn-43 inline-block relative btn41-43 btn-43">No</button>
+                  <button
+                    class="py-2 px-10 border border-red-500 color-red text-white font-medium hover:bg-red-400 duration-200 btn41-43 btn-43 inline-block relative btn41-43 btn-43 mr-6"
+                  >
+                    Yes
+                  </button>
+                  <button
+                    class="py-2 px-10 border border-red-500 color-red text-white font-medium hover:bg-red-400 duration-200 btn41-43 btn-43 inline-block relative btn41-43 btn-43"
+                    onclick="handleNoButtonClick()"
+                  >
+                    No
+                  </button>
                 </div>
-                </form>
               </div>
 
-              <div class="next-button flex items-center justify-center">
-                <button class="px-4 py-2 border border-red-600 bg-red-500 text-white font-medium rounded-md hover:bg-red-400 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disable" onclick="nextTab()">
+
+              <div class="button-container flex items-center justify-center gap-5">
+                <div class="previous-button flex items-center justify-center">
+                  <button
+                    class="font-medium md:text-base text-sm px-10 py-2 btn41-43 btn-43 inline-block relative btn41-43 btn-43 border border-red-600 mr-2"
+                    onclick="previousTab()"
+                  >
+                    Previous
+                  </button>
+                </div>
+  
+                <div class="next-button flex items-center justify-center">
+                  <button
+                    class="font-medium md:text-base text-sm px-10 py-2 btn41-43 btn-43 inline-block relative btn41-43 btn-43 border border-red-600 mr-2"
+                    onclick="nextTab()"
+                  >
                     Next
-                </button>
-            </div>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -312,7 +411,11 @@
               placeholder="johndoe@gmail.com"
               class="outline-none border-none w-[50%] md:w-[40%] text-black py-3 px-4"
             />
-            <button class="color-red py-3 px-10 font-bold btn41-43 btn-43 inline-block relative btn41-43 btn-43">Enter</button>
+            <button
+              class="color-red py-3 px-10 font-bold btn41-43 btn-43 inline-block relative btn41-43 btn-43"
+            >
+              Enter
+            </button>
           </div>
         </form>
       </div>
