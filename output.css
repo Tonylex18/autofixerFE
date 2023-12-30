@@ -845,6 +845,10 @@ video {
   height: 0.75rem;
 }
 
+.h-3\/6 {
+  height: 50%;
+}
+
 .h-40 {
   height: 10rem;
 }
@@ -886,6 +890,10 @@ video {
   height: 100%;
 }
 
+.h-2\/6 {
+  height: 33.333333%;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -896,6 +904,10 @@ video {
 
 .w-3 {
   width: 0.75rem;
+}
+
+.w-3\/6 {
+  width: 50%;
 }
 
 .w-32 {
@@ -949,6 +961,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-2\/6 {
+  width: 33.333333%;
 }
 
 .max-w-\[1120px\] {
@@ -1944,6 +1964,34 @@ tbody td:is([data-type="number"]) {
 
 .selected-card {
   border: 2px solid red;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  /* Dark background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.spinner-img {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .hover\:border:hover {
