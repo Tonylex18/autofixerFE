@@ -13,11 +13,9 @@ const observer = new IntersectionObserver((entries, observer) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Simulate the delay in loading the website content
   setTimeout(function () {
-      // Hide the preloader when the website content is loaded
       document.getElementById("preloader").style.display = "none";
-  }, 2000); // Adjust the time according to your needs
+  }, 1000);
 });
 
 

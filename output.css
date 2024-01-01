@@ -841,12 +841,12 @@ video {
   height: 4rem;
 }
 
-.h-3 {
-  height: 0.75rem;
+.h-2\/6 {
+  height: 33.333333%;
 }
 
-.h-3\/6 {
-  height: 50%;
+.h-3 {
+  height: 0.75rem;
 }
 
 .h-40 {
@@ -890,12 +890,12 @@ video {
   height: 100%;
 }
 
-.h-2\/6 {
-  height: 33.333333%;
-}
-
 .w-1 {
   width: 0.25rem;
+}
+
+.w-2\/6 {
+  width: 33.333333%;
 }
 
 .w-24 {
@@ -904,10 +904,6 @@ video {
 
 .w-3 {
   width: 0.75rem;
-}
-
-.w-3\/6 {
-  width: 50%;
 }
 
 .w-32 {
@@ -961,14 +957,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-2\/6 {
-  width: 33.333333%;
 }
 
 .max-w-\[1120px\] {
@@ -1973,14 +1961,44 @@ tbody td:is([data-type="number"]) {
   width: 100%;
   height: 100%;
   background-color: #000;
-  /* Dark background color */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
 }
 
+.spinner-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
 .spinner-img {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.spinner-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff;
   animation: spin 1s linear infinite;
 }
 

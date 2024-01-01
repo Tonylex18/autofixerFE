@@ -321,20 +321,50 @@ tbody td:is([data-type="number"]) {
   }
 
 
-  #preloader {
+#preloader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000; /* Dark background color */
+    background-color: #000; 
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
 }
 
+.spinner-container {
+    position: relative;
+    width: 100px; 
+    height: 100px; 
+}
+
 .spinner-img {
+    width: 50px; 
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.spinner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgba(255, 255, 255, 0.3); 
+    border-top: 4px solid #fff;
     animation: spin 1s linear infinite;
 }
 
